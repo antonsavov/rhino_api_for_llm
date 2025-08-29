@@ -1,9 +1,6 @@
 
 #!/usr/bin/env python3
-# Extract Python-style method signatures from RhinoCommon HTML (extracted from .chm).
-# Usage:
-#   - Set INPUT_DIR and OUTPUT_PATH below, or
-#   - Run: python extract_rhinocommon_signatures.py <input_dir> <output_txt>
+# Extract Python-style method signatures from RhinoCommon HTML.
 #
 # Notes:
 # - Processes files starting with "M_" and ending with ".htm" or ".html".
@@ -17,18 +14,16 @@
 # Best-effort type mapping for common .NET types to Python typing names (float, int, bool, str).
 # Unknown types are kept as-is (often fully-qualified Rhino/System types).
 #
-# © 2025 - MIT License
+# © Anton Savov 2025 - MIT License
 
 import os
 import re
 import html
 import sys
-import argparse
-from pathlib import Path
 
 # ---------- Configuration (overridden by CLI args if provided) ----------
 INPUT_DIRS = [r"grasshopper-api-docs/api/grasshopper/html",r"rhinocommon-api-docs/api/RhinoCommon/html"]
-OUTPUT_PATHS = [r"api_methods_signatures_grasshopper.txt", r"api_methods_signatures_rhinocommon.txt"]
+OUTPUT_PATHS = [r"ref_api_methods_signatures_grasshopper.txt", r"ref_api_methods_signatures_rhinocommon.txt"]
 
 # ---------- Helpers ----------
 

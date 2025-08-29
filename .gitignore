@@ -183,3 +183,4 @@ cython_debug/
 
 rhinocommon-api-docs
 grasshopper-api-docs
+.DS_Store
