@@ -13,7 +13,7 @@ Units: meters
 
 Rules:
 - API: Use the `RhinoCommon` and the `Grasshopper` APIs. DO NOT use `rhinoscriptsyntax`.
-- No invented methods: Use existing API calls only. Refer to the APIs reference in the text files.
+- No invented methods: Use existing API calls only. Refer to the APIs reference in the text files and the python component reference in the PDF.
 - Determinism: Use randomness ONLY if it aligns with the design concept. When using randomness, set a seed to ensure the results are replicable.
 
 

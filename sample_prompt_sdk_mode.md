@@ -14,7 +14,7 @@ Units: meters
 Rules:
 - API: Use the `RhinoCommon` and the `Grasshopper` APIs. DO NOT use `rhinoscriptsyntax`.
 - No invented methods: Use existing API calls only. Refer to the APIs reference in the text files.
-- SDK mode: Generate scripts for the SDK mode of the Grasshopper Python component (see reference PDF `Grasshopper Scripting Python.pdf`). This allows for parameter inputs to be automatically added to the script component.
+- SDK mode: Generate scripts for the SDK mode of the Grasshopper Python component (see reference PDF attached). This allows for parameter inputs to be automatically added to the script component.
 - Determinism: Use randomness ONLY if it aligns with the design concept. When using randomness, set a seed to ensure the results are replicable.
 
 
