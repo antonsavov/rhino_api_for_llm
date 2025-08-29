@@ -41,8 +41,8 @@ python extract_api_signatures.py
 ```
 
 This will process the HTML files in both documentation folders and output two text files:
-- `api_methods_signatures_grasshopper.txt`
-- `api_methods_signatures_rhinocommon.txt`
+- `ref_api_methods_signatures_grasshopper.txt`
+- `ref_api_methods_signatures_rhinocommon.txt`
 
 Each line in these files contains a fully-qualified method signature, e.g.:
 ```
