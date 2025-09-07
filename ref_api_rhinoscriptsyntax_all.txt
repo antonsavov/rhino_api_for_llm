@@ -1,0 +1,899 @@
+rhinoscriptsyntax.AddAlias(alias: str, macro: str) -> bool
+rhinoscriptsyntax.AddAlignedDimension(start_point: Rhino.Geometry.Point3d, end_point: Rhino.Geometry.Point3d, point_on_dimension_line: Rhino.Geometry.Point3d, style: str = None) -> System.Guid
+rhinoscriptsyntax.AddArc(plane: str, radius: float, angle_degrees: float) -> System.Guid
+rhinoscriptsyntax.AddArc3Pt(start: Rhino.Geometry.Point3d, end: Rhino.Geometry.Point3d, point_on_arc: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.AddArcPtTanPt(start: Rhino.Geometry.Point3d, direction: Rhino.Geometry.Vector3d, end: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.AddBlendCurve(curves: Any, parameters: Any, reverses: Any, continuities: Any) -> System.Guid
+rhinoscriptsyntax.AddBlock(object_ids: Any, base_point: Rhino.Geometry.Point3d, name: str = None, delete_input: bool = False) -> str
+rhinoscriptsyntax.AddBox(corners: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.AddCircle(plane_or_center: Rhino.Geometry.Point3d, radius: float) -> System.Guid
+rhinoscriptsyntax.AddCircle3Pt(first: Rhino.Geometry.Point3d, second: Rhino.Geometry.Point3d, third: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.AddClippingPlane(plane: Rhino.Geometry.Plane, u_magnitude: float, v_magnitude: float, views: Any = None) -> System.Guid
+rhinoscriptsyntax.AddCone(base: Rhino.Geometry.Point3d, height: Rhino.Geometry.Point3d, radius: float, cap: bool = True) -> System.Guid
+rhinoscriptsyntax.AddCurve(points: Rhino.Geometry.Point3d, degree: float = 3) -> System.Guid
+rhinoscriptsyntax.AddCutPlane(object_ids: Any, start_point: Any, end_point: Any, normal: Rhino.Geometry.Vector3d = None) -> System.Guid
+rhinoscriptsyntax.AddCylinder(base: Rhino.Geometry.Point3d, height: Rhino.Geometry.Point3d, radius: float, cap: bool = True) -> System.Guid
+rhinoscriptsyntax.AddDetail(layout_id: System.Guid, corner1: Rhino.Geometry.Point3d, corner2: Rhino.Geometry.Point3d, title: str = None, projection: float = 1) -> System.Guid
+rhinoscriptsyntax.AddDimStyle(dimstyle_name: str = None) -> str
+rhinoscriptsyntax.AddDirectionalLight(start_point: Rhino.Geometry.Point3d, end_point: Rhino.Geometry.Point3d) -> Any
+rhinoscriptsyntax.AddEdgeSrf(curve_ids: Any) -> System.Guid
+rhinoscriptsyntax.AddEllipse(plane: Rhino.Geometry.Plane, radiusX: float, radiusY: float) -> System.Guid
+rhinoscriptsyntax.AddEllipse3Pt(center: Rhino.Geometry.Point3d, second: Rhino.Geometry.Point3d, third: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.AddFilletCurve(curve0id: System.Guid, curve1id: System.Guid, radius: float = 1.0, base_point0: Rhino.Geometry.Point3d = None, base_point1: Rhino.Geometry.Point3d = None) -> System.Guid
+rhinoscriptsyntax.AddGroup(group_name: str = None) -> str
+rhinoscriptsyntax.AddHatch(curve_id: System.Guid, hatch_pattern: str = None, scale: float = 1.0, rotation: float = 0.0) -> Optional[System.Guid]
+rhinoscriptsyntax.AddHatchPatterns(filename: str, replace: bool = False) -> Any
+rhinoscriptsyntax.AddHatches(curve_ids: Any, hatch_pattern: str = None, scale: float = 1.0, rotation: float = 0.0, tolerance: float = None) -> Any
+rhinoscriptsyntax.AddInterpCrvOnSrf(surface_id: System.Guid, points: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.AddInterpCrvOnSrfUV(surface_id: System.Guid, points: Any) -> System.Guid
+rhinoscriptsyntax.AddInterpCurve(points: Rhino.Geometry.Point3d, degree: float = 3, knotstyle: Any = 0, start_tangent: Rhino.Geometry.Vector3d = None, end_tangent: Rhino.Geometry.Vector3d = None) -> System.Guid
+rhinoscriptsyntax.AddLayer(name: str = None, color: System.Drawing.Color = None, visible: Any = True, locked: bool = False, parent: str = None) -> str
+rhinoscriptsyntax.AddLayout(title: str = None, size: Any = None) -> System.Guid
+rhinoscriptsyntax.AddLeader(points: Rhino.Geometry.Point3d, view_or_plane: str = None, text: str = None) -> System.Guid
+rhinoscriptsyntax.AddLine(start: Rhino.Geometry.Point3d, end: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.AddLinearDimension(plane: Rhino.Geometry.Plane, start_point: Rhino.Geometry.Point3d, end_point: Rhino.Geometry.Point3d, point_on_dimension_line: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.AddLinearLight(start_point: Rhino.Geometry.Point3d, end_point: Rhino.Geometry.Point3d, width: float = None) -> System.Guid
+rhinoscriptsyntax.AddLoftSrf(object_ids: Any, start: Rhino.Geometry.Point3d = None, end: Rhino.Geometry.Point3d = None, loft_type: float = 0, simplify_method: float = 0, value: float = 0, closed: bool = False) -> Any
+rhinoscriptsyntax.AddMaterialToLayer(layer: str) -> float
+rhinoscriptsyntax.AddMaterialToObject(object_id: System.Guid) -> float
+rhinoscriptsyntax.AddMesh(vertices: Rhino.Geometry.Point3d, face_vertices: Any, vertex_normals: Rhino.Geometry.Vector3d = None, texture_coordinates: Any = None, vertex_colors: System.Drawing.Color = None) -> System.Guid
+rhinoscriptsyntax.AddNamedCPlane(cplane_name: str, view: Any = None) -> Any
+rhinoscriptsyntax.AddNamedView(name: str, view: Any = None) -> str
+rhinoscriptsyntax.AddNetworkSrf(curves: Any, continuity: float = 1, edge_tolerance: Any = 0, interior_tolerance: Any = 0, angle_tolerance: Any = 0) -> System.Guid
+rhinoscriptsyntax.AddNurbsCurve(points: Rhino.Geometry.Point3d, knots: Any, degree: float, weights: Any = None) -> System.Guid
+rhinoscriptsyntax.AddNurbsSurface(point_count: Any, points: Rhino.Geometry.Point3d, knots_u: Any, knots_v: Any, degree: Any, weights: Any = None) -> Optional[System.Guid]
+rhinoscriptsyntax.AddObjectToGroup(object_id: System.Guid, group_name: str) -> Any
+rhinoscriptsyntax.AddObjectsToGroup(object_ids: Any, group_name: str) -> float
+rhinoscriptsyntax.AddPatch(object_ids: Any, uv_spans_tuple_OR_surface_object_id: Any, tolerance: float = None, trim: bool = True, point_spacing: float = 0.1, flexibility: float = 1.0, surface_pull: float = 1.0, fix_edges: bool = False) -> System.Guid
+rhinoscriptsyntax.AddPictureFrame(plane: Rhino.Geometry.Plane, filename: str, width: float = 0.0, height: float = 0.0, self_illumination: bool = True, embed: bool = False, use_alpha: bool = False, make_mesh: bool = False) -> System.Guid
+rhinoscriptsyntax.AddPipe(curve_id: System.Guid, parameters: Any, radii: Any, blend_type: float = 0, cap: float = 0, fit: bool = False) -> Any
+rhinoscriptsyntax.AddPlanarMesh(object_id: System.Guid, delete_input: bool = False) -> System.Guid
+rhinoscriptsyntax.AddPlanarSrf(object_ids: Any) -> Any
+rhinoscriptsyntax.AddPlaneSurface(plane: Rhino.Geometry.Plane, u_dir: float, v_dir: float) -> System.Guid
+rhinoscriptsyntax.AddPoint(point: Rhino.Geometry.Point3d, y: Any = None, z: Any = None) -> System.Guid
+rhinoscriptsyntax.AddPointCloud(points: Rhino.Geometry.Point3d, colors: System.Drawing.Color = None) -> System.Guid
+rhinoscriptsyntax.AddPointLight(point: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.AddPoints(points: Rhino.Geometry.Point3d) -> Any
+rhinoscriptsyntax.AddPolyline(points: Rhino.Geometry.Point3d, replace_id: System.Guid = None) -> System.Guid
+rhinoscriptsyntax.AddRailRevSrf(profile: System.Guid, rail: System.Guid, axis: Rhino.Geometry.Point3d, scale_height: bool = False) -> System.Guid
+rhinoscriptsyntax.AddRectangle(plane: Rhino.Geometry.Plane, width: float, height: float) -> System.Guid
+rhinoscriptsyntax.AddRectangularLight(origin: Rhino.Geometry.Point3d, width_point: Rhino.Geometry.Point3d, height_point: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.AddRevSrf(curve_id: System.Guid, axis: Any, start_angle: float = 0.0, end_angle: float = 360.0) -> System.Guid
+rhinoscriptsyntax.AddSearchPath(folder: str, index: float = -1) -> float
+rhinoscriptsyntax.AddSphere(center_or_plane: Rhino.Geometry.Point3d, radius: float) -> System.Guid
+rhinoscriptsyntax.AddSpiral(point0: Rhino.Geometry.Point3d, point1: Rhino.Geometry.Point3d, pitch: float, turns: float, radius0: float, radius1: float = None) -> System.Guid
+rhinoscriptsyntax.AddSpotLight(origin: Rhino.Geometry.Point3d, radius: float, apex_point: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.AddSrfContourCrvs(object_id: System.Guid, points_or_plane: Rhino.Geometry.Point3d, interval: float = None) -> System.Guid
+rhinoscriptsyntax.AddSrfControlPtGrid(count: Any, points: Rhino.Geometry.Point3d, degree: Any = (3,3)) -> System.Guid
+rhinoscriptsyntax.AddSrfPt(points: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.AddSrfPtGrid(count: Any, points: Rhino.Geometry.Point3d, degree: Any = (3,3), closed: Any = (False,False)) -> System.Guid
+rhinoscriptsyntax.AddSubCrv(curve_id: System.Guid, param0: float, param1: float) -> System.Guid
+rhinoscriptsyntax.AddSweep1(rail: System.Guid, shapes: Any, closed: bool = False) -> Any
+rhinoscriptsyntax.AddSweep2(rails: Any, shapes: Any, closed: bool = False) -> Any
+rhinoscriptsyntax.AddText(text: str, point_or_plane: Rhino.Geometry.Point3d, height: float = 1.0, font: str = None, font_style: float = 0, justification: float = None) -> System.Guid
+rhinoscriptsyntax.AddTextDot(text: str, point: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.AddTorus(base: Rhino.Geometry.Point3d, major_radius: float, minor_radius: float, direction: Any = None) -> System.Guid
+rhinoscriptsyntax.AddTweenCurves(from_curve_id: System.Guid, to_curve_id: System.Guid, number_of_curves: float = 1, method: float = 0, sample_number: float = 10) -> Optional[Any]
+rhinoscriptsyntax.AliasCount() -> float
+rhinoscriptsyntax.AliasMacro(alias: str, macro: str = None) -> Optional[str]
+rhinoscriptsyntax.AliasNames() -> str
+rhinoscriptsyntax.AllObjects(select: bool = False, include_lights: bool = False, include_grips: bool = False, include_references: Any = False) -> Any
+rhinoscriptsyntax.Angle(point1: Rhino.Geometry.Point3d, point2: Rhino.Geometry.Point3d, plane: bool = True) -> Any
+rhinoscriptsyntax.Angle2(line1: Any, line2: Any) -> Any
+rhinoscriptsyntax.AppearanceColor(item: float, color: Any = None) -> Any
+rhinoscriptsyntax.ArcAngle(curve_id: System.Guid, segment_index: float = -1) -> float
+rhinoscriptsyntax.ArcCenterPoint(curve_id: System.Guid, segment_index: float = -1) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.ArcMidPoint(curve_id: System.Guid, segment_index: float = -1) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.ArcRadius(curve_id: System.Guid, segment_index: float = -1) -> float
+rhinoscriptsyntax.Area(object_id: System.Guid) -> float
+rhinoscriptsyntax.AutosaveFile(filename: str = None) -> str
+rhinoscriptsyntax.AutosaveInterval(minutes: float = None) -> float
+rhinoscriptsyntax.BlockContainerCount(block_name: str) -> float
+rhinoscriptsyntax.BlockContainers(block_name: str) -> Any
+rhinoscriptsyntax.BlockCount() -> float
+rhinoscriptsyntax.BlockDescription(block_name: str, description: str = None) -> str
+rhinoscriptsyntax.BlockInstanceCount(block_name: str, where_to_look: float = 0) -> float
+rhinoscriptsyntax.BlockInstanceInsertPoint(object_id: System.Guid) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.BlockInstanceName(object_id: System.Guid) -> str
+rhinoscriptsyntax.BlockInstanceXform(object_id: System.Guid) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.BlockInstances(block_name: str, where_to_look: float = 0) -> Any
+rhinoscriptsyntax.BlockNames(sort: bool = False) -> Any
+rhinoscriptsyntax.BlockObjectCount(block_name: str) -> float
+rhinoscriptsyntax.BlockObjects(block_name: str) -> Any
+rhinoscriptsyntax.BlockPath(block_name: str) -> str
+rhinoscriptsyntax.BlockStatus(block_name: str) -> float
+rhinoscriptsyntax.BooleanDifference(input0: Any, input1: Any, delete_input: bool = True) -> Any
+rhinoscriptsyntax.BooleanIntersection(input0: Any, input1: Any, delete_input: bool = True) -> Any
+rhinoscriptsyntax.BooleanUnion(input: Any, delete_input: bool = True) -> Optional[Any]
+rhinoscriptsyntax.BoundingBox(objects: Any, view_or_plane: Any = None, in_world_coords: bool = True) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.BrepClosestPoint(object_id: System.Guid, point: Rhino.Geometry.Point3d) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.BrowseForFolder(folder: str = None, message: str = None, title: str = None) -> str
+rhinoscriptsyntax.BuildDate() -> datetime.date
+rhinoscriptsyntax.CapPlanarHoles(surface_id: System.Guid) -> bool
+rhinoscriptsyntax.ChangeCurveDegree(object_id: System.Guid, degree: float) -> bool
+rhinoscriptsyntax.ChangeSurfaceDegree(object_id: System.Guid, degree: Any) -> bool
+rhinoscriptsyntax.CheckListBox(items: Any, message: str = None, title: str = None) -> Any
+rhinoscriptsyntax.CircleCenterPoint(curve_id: System.Guid, segment_index: float = -1, return_plane: bool = False) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CircleCircumference(curve_id: System.Guid, segment_index: float = -1) -> float
+rhinoscriptsyntax.CircleRadius(curve_id: System.Guid, segment_index: float = -1) -> float
+rhinoscriptsyntax.ClearCommandHistory() -> None
+rhinoscriptsyntax.ClipboardText(text: str = None) -> str
+rhinoscriptsyntax.CloseCurve(curve_id: System.Guid, tolerance: float = -1.0) -> System.Guid
+rhinoscriptsyntax.CloseToolbarCollection(name: str, prompt: bool = False) -> bool
+rhinoscriptsyntax.ClosedCurveOrientation(curve_id: System.Guid, direction: Rhino.Geometry.Vector3d = (0,0,1)) -> float
+rhinoscriptsyntax.ColorAdjustLuma(rgb: System.Drawing.Color, luma: float, scale: bool = False) -> System.Drawing.Color
+rhinoscriptsyntax.ColorBlueValue(rgb: System.Drawing.Color) -> float
+rhinoscriptsyntax.ColorGreenValue(rgb: System.Drawing.Color) -> float
+rhinoscriptsyntax.ColorHLSToRGB(hls: System.Drawing.Color) -> System.Drawing.Color
+rhinoscriptsyntax.ColorRGBToHLS(rgb: System.Drawing.Color) -> System.Drawing.Color
+rhinoscriptsyntax.ColorRedValue(rgb: Any) -> System.Drawing.Color
+rhinoscriptsyntax.ComboListBox(items: Any, message: str = None, title: str = None) -> str
+rhinoscriptsyntax.Command(commandString: str, echo: bool = True) -> bool
+rhinoscriptsyntax.CommandHistory() -> str
+rhinoscriptsyntax.CompareGeometry(first: Any, second: Any) -> Any
+rhinoscriptsyntax.ContextIsGrasshopper() -> bool
+rhinoscriptsyntax.ContextIsRhino() -> bool
+rhinoscriptsyntax.ConvertCurveToPolyline(curve_id: System.Guid, angle_tolerance: float = 5.0, tolerance: float = 0.01, delete_input: bool = False, min_edge_length: float = 0, max_edge_length: float = 0) -> System.Guid
+rhinoscriptsyntax.CopyMaterial(source_index: float, destination_index: float) -> bool
+rhinoscriptsyntax.CopyObject(object_id: System.Guid, translation: Rhino.Geometry.Vector3d = None) -> System.Guid
+rhinoscriptsyntax.CopyObjects(object_ids: Any, translation: Rhino.Geometry.Vector3d = None) -> Any
+rhinoscriptsyntax.CreateColor(color: Any, g: Any = None, b: Any = None, a: Any = None) -> System.Drawing.Color
+rhinoscriptsyntax.CreateInterval(interval: Any, y: Any = None) -> Tuple[float, float]
+rhinoscriptsyntax.CreatePlane(plane_or_origin: Any, x_axis: Any = None, y_axis: Any = None, ignored: Any = None) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.CreatePoint(point: Rhino.Geometry.Point3d, y: Any = None, z: Any = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CreatePreviewImage(filename: str, view: str = None, size: float = None, flags: float = 0, wireframe: bool = False) -> bool
+rhinoscriptsyntax.CreateVector(vector: Rhino.Geometry.Point3d, y: Any = None, z: Any = None) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.CreateXform(xform: Any) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.CullDuplicateNumbers(numbers: Any, tolerance: float = None) -> Any
+rhinoscriptsyntax.CullDuplicatePoints(points: Rhino.Geometry.Point3d, tolerance: float = -1) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CurrentDetail(layout: Any, detail: Any = None, return_name: bool = True) -> str
+rhinoscriptsyntax.CurrentDimStyle(dimstyle_name: str = None) -> str
+rhinoscriptsyntax.CurrentHatchPattern(hatch_pattern: str = None) -> str
+rhinoscriptsyntax.CurrentLayer(layer: System.Guid = None) -> str
+rhinoscriptsyntax.CurrentView(view: Any = None, return_name: bool = True) -> str
+rhinoscriptsyntax.CurveArcLengthPoint(curve_id: System.Guid, length: float, from_start: bool = True) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CurveArea(curve_id: System.Guid) -> Any
+rhinoscriptsyntax.CurveAreaCentroid(curve_id: System.Guid) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CurveArrows(curve_id: System.Guid, arrow_style: float = None) -> float
+rhinoscriptsyntax.CurveBooleanDifference(curve_id_0: System.Guid, curve_id_1: System.Guid, tolerance: float = None) -> Optional[Any]
+rhinoscriptsyntax.CurveBooleanIntersection(curve_id_0: System.Guid, curve_id_1: System.Guid, tolerance: float = None) -> Any
+rhinoscriptsyntax.CurveBooleanUnion(curve_id: Any, tolerance: float = None) -> Any
+rhinoscriptsyntax.CurveBrepIntersect(curve_id: System.Guid, brep_id: System.Guid, tolerance: float = None) -> Any
+rhinoscriptsyntax.CurveClosestObject(curve_id: System.Guid, object_ids: Any) -> Any
+rhinoscriptsyntax.CurveClosestPoint(curve_id: System.Guid, test_point: Any, segment_index: float = -1) -> float
+rhinoscriptsyntax.CurveContourPoints(curve_id: System.Guid, start_point: Rhino.Geometry.Point3d, end_point: Rhino.Geometry.Point3d, interval: float = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CurveCurvature(curve_id: System.Guid, parameter: float) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CurveCurveIntersection(curveA: System.Guid, curveB: System.Guid = None, tolerance: float = -1) -> List[Any]
+rhinoscriptsyntax.CurveDegree(curve_id: System.Guid, segment_index: float = -1) -> float
+rhinoscriptsyntax.CurveDeviation(curve_a: System.Guid, curve_b: System.Guid) -> Optional[Any]
+rhinoscriptsyntax.CurveDim(curve_id: System.Guid, segment_index: float = -1) -> Optional[float]
+rhinoscriptsyntax.CurveDirectionsMatch(curve_id_0: System.Guid, curve_id_1: System.Guid) -> bool
+rhinoscriptsyntax.CurveDiscontinuity(curve_id: System.Guid, style: float) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CurveDomain(curve_id: System.Guid, segment_index: float = -1) -> Any
+rhinoscriptsyntax.CurveEditPoints(curve_id: System.Guid, return_parameters: bool = False, segment_index: float = -1) -> Optional[Rhino.Geometry.Point3d]
+rhinoscriptsyntax.CurveEndPoint(curve_id: System.Guid, segment_index: float = -1) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CurveFilletPoints(curve_id_0: System.Guid, curve_id_1: System.Guid, radius: float = 1.0, base_point_0: Rhino.Geometry.Point3d = None, base_point_1: Rhino.Geometry.Point3d = None, return_points: bool = True) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CurveFrame(curve_id: System.Guid, parameter: float, segment_index: float = -1) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.CurveKnotCount(curve_id: System.Guid, segment_index: float = -1) -> float
+rhinoscriptsyntax.CurveKnots(curve_id: System.Guid, segment_index: float = -1) -> Any
+rhinoscriptsyntax.CurveLength(curve_id: System.Guid, segment_index: float = -1, sub_domain: Any = None) -> float
+rhinoscriptsyntax.CurveMeshIntersection(curve_id: System.Guid, mesh_id: System.Guid, return_faces: bool = False) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CurveMidPoint(curve_id: System.Guid, segment_index: float = -1) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CurveNormal(curve_id: System.Guid, segment_index: float = -1) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.CurveNormalizedParameter(curve_id: System.Guid, parameter: float) -> float
+rhinoscriptsyntax.CurveParameter(curve_id: System.Guid, parameter: float) -> float
+rhinoscriptsyntax.CurvePerpFrame(curve_id: System.Guid, parameter: float) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.CurvePlane(curve_id: System.Guid, segment_index: float = -1) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.CurvePointCount(curve_id: System.Guid, segment_index: float = -1) -> float
+rhinoscriptsyntax.CurvePoints(curve_id: System.Guid, segment_index: float = -1) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CurveRadius(curve_id: System.Guid, test_point: Rhino.Geometry.Point3d, segment_index: float = -1) -> float
+rhinoscriptsyntax.CurveSeam(curve_id: System.Guid, parameter: float) -> bool
+rhinoscriptsyntax.CurveStartPoint(curve_id: System.Guid, segment_index: float = -1, point: Rhino.Geometry.Point3d = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CurveSurfaceIntersection(curve_id: System.Guid, surface_id: System.Guid, tolerance: float = -1, angle_tolerance: float = -1) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.CurveTangent(curve_id: System.Guid, parameter: float, segment_index: float = -1) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.CurveWeights(curve_id: System.Guid, segment_index: float = -1) -> float
+rhinoscriptsyntax.DefaultRenderer(renderer: str = None) -> System.Guid
+rhinoscriptsyntax.DeleteAlias(alias: str) -> bool
+rhinoscriptsyntax.DeleteBlock(block_name: str) -> bool
+rhinoscriptsyntax.DeleteDimStyle(dimstyle_name: str) -> str
+rhinoscriptsyntax.DeleteDocumentData(section: str = None, entry: str = None) -> bool
+rhinoscriptsyntax.DeleteGroup(group_name: str) -> bool
+rhinoscriptsyntax.DeleteLayer(layer: Any) -> bool
+rhinoscriptsyntax.DeleteNamedCPlane(name: str) -> bool
+rhinoscriptsyntax.DeleteNamedView(name: str) -> bool
+rhinoscriptsyntax.DeleteObject(object_id: System.Guid) -> bool
+rhinoscriptsyntax.DeleteObjects(object_ids: Any) -> float
+rhinoscriptsyntax.DeleteSearchPath(folder: str) -> bool
+rhinoscriptsyntax.DetailLock(detail_id: System.Guid, lock: bool = None) -> bool
+rhinoscriptsyntax.DetailScale(detail_id: System.Guid, model_length: float = None, page_length: float = None) -> float
+rhinoscriptsyntax.DimStyleAnglePrecision(dimstyle: str, precision: float = None) -> float
+rhinoscriptsyntax.DimStyleArrowSize(dimstyle: str, size: float = None) -> float
+rhinoscriptsyntax.DimStyleCount() -> float
+rhinoscriptsyntax.DimStyleExtension(dimstyle: str, extension: float = None) -> float
+rhinoscriptsyntax.DimStyleFont(dimstyle: str, font: str = None) -> str
+rhinoscriptsyntax.DimStyleLeaderArrowSize(dimstyle: str, size: float = None) -> float
+rhinoscriptsyntax.DimStyleLengthFactor(dimstyle: str, factor: float = None) -> float
+rhinoscriptsyntax.DimStyleLinearPrecision(dimstyle: str, precision: float = None) -> float
+rhinoscriptsyntax.DimStyleNames(sort: bool = False) -> Any
+rhinoscriptsyntax.DimStyleNumberFormat(dimstyle: str, format: float = None) -> float
+rhinoscriptsyntax.DimStyleOffset(dimstyle: str, offset: float = None) -> float
+rhinoscriptsyntax.DimStylePrefix(dimstyle: str, prefix: str = None) -> str
+rhinoscriptsyntax.DimStyleScale(dimstyle: str, scale: float = None) -> float
+rhinoscriptsyntax.DimStyleSuffix(dimstyle: str, suffix: str = None) -> str
+rhinoscriptsyntax.DimStyleTextAlignment(dimstyle: str, alignment: float = None) -> float
+rhinoscriptsyntax.DimStyleTextGap(dimstyle: str, gap: float = None) -> float
+rhinoscriptsyntax.DimStyleTextHeight(dimstyle: str, height: float = None) -> float
+rhinoscriptsyntax.DimensionStyle(object_id: System.Guid, dimstyle_name: str = None) -> str
+rhinoscriptsyntax.DimensionText(object_id: System.Guid) -> str
+rhinoscriptsyntax.DimensionUserText(object_id: System.Guid, usertext: str = None) -> str
+rhinoscriptsyntax.DimensionValue(object_id: System.Guid) -> float
+rhinoscriptsyntax.DisjointMeshCount(object_id: System.Guid) -> float
+rhinoscriptsyntax.DisplayOleAlerts(enable: bool) -> None
+rhinoscriptsyntax.Distance(point1: Rhino.Geometry.Point3d, point2: Rhino.Geometry.Point3d) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.DistanceToPlane(plane: Rhino.Geometry.Plane, point: Rhino.Geometry.Point3d) -> float
+rhinoscriptsyntax.DivideCurve(curve_id: System.Guid, segments: float, create_points: bool = False, return_points: bool = True) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.DivideCurveEquidistant(curve_id: System.Guid, distance: float, create_points: bool = False, return_points: bool = True) -> Optional[Rhino.Geometry.Point3d]
+rhinoscriptsyntax.DivideCurveLength(curve_id: System.Guid, length: float, create_points: bool = False, return_points: bool = True) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.DocumentDataCount() -> float
+rhinoscriptsyntax.DocumentModified(modified: bool = None) -> bool
+rhinoscriptsyntax.DocumentName() -> str
+rhinoscriptsyntax.DocumentPath() -> str
+rhinoscriptsyntax.DocumentUserTextCount() -> float
+rhinoscriptsyntax.DuplicateEdgeCurves(object_id: System.Guid, select: bool = False) -> Any
+rhinoscriptsyntax.DuplicateMeshBorder(mesh_id: System.Guid) -> Any
+rhinoscriptsyntax.DuplicateSurfaceBorder(surface_id: System.Guid, type: float = 0) -> Any
+rhinoscriptsyntax.EdgeAnalysisColor(color: Any = None) -> Any
+rhinoscriptsyntax.EdgeAnalysisMode(mode: float = None) -> float
+rhinoscriptsyntax.EditBox(default_string: str = None, message: str = None, title: str = None) -> str
+rhinoscriptsyntax.EllipseCenterPoint(curve_id: System.Guid) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.EllipseQuadPoints(curve_id: System.Guid) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.EnableAutosave(enable: bool = True) -> bool
+rhinoscriptsyntax.EnableLight(object_id: System.Guid, enable: bool = None) -> bool
+rhinoscriptsyntax.EnableObjectGrips(object_id: System.Guid, enable: bool = True) -> bool
+rhinoscriptsyntax.EnablePlugIn(plugin: System.Guid, enable: bool = None) -> bool
+rhinoscriptsyntax.EnableRedraw(enable: bool = True) -> bool
+rhinoscriptsyntax.EvaluateCurve(curve_id: System.Guid, t: float, segment_index: float = -1) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.EvaluatePlane(plane: Rhino.Geometry.Plane, parameter: Any) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.EvaluateSurface(surface_id: System.Guid, u: Any, v: Any) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.ExeFolder() -> str
+rhinoscriptsyntax.ExePlatform() -> str
+rhinoscriptsyntax.ExeServiceRelease() -> str
+rhinoscriptsyntax.ExeVersion() -> str
+rhinoscriptsyntax.Exit() -> None
+rhinoscriptsyntax.ExpandLayer(layer: str, expand: bool) -> bool
+rhinoscriptsyntax.ExplodeBlockInstance(object_id: System.Guid, explode_nested_instances: bool = False) -> Any
+rhinoscriptsyntax.ExplodeCurves(curve_ids: System.Guid, delete_input: bool = False) -> Any
+rhinoscriptsyntax.ExplodeHatch(hatch_id: System.Guid, delete: bool = False) -> Any
+rhinoscriptsyntax.ExplodeMeshes(mesh_ids: Any, delete: bool = False) -> Any
+rhinoscriptsyntax.ExplodePolysurfaces(object_ids: Any, delete_input: Any = False) -> Any
+rhinoscriptsyntax.ExplodeText(text_id: System.Guid, delete: bool = False) -> Any
+rhinoscriptsyntax.ExtendCurve(curve_id: System.Guid, extension_type: float, side: float, boundary_object_ids: System.Guid) -> System.Guid
+rhinoscriptsyntax.ExtendCurveLength(curve_id: System.Guid, extension_type: float, side: float, length: float) -> System.Guid
+rhinoscriptsyntax.ExtendCurvePoint(curve_id: System.Guid, side: float, point: Rhino.Geometry.Point3d, extension_type: float = 2) -> System.Guid
+rhinoscriptsyntax.ExtendSurface(surface_id: System.Guid, parameter: Any, length: float, smooth: bool = True) -> bool
+rhinoscriptsyntax.ExtractIsoCurve(surface_id: System.Guid, parameter: Any, direction: float) -> Any
+rhinoscriptsyntax.ExtractPreviewImage(filename: str, modelname: str = None) -> bool
+rhinoscriptsyntax.ExtractSurface(object_id: System.Guid, face_indices: float, copy: bool = False) -> Any
+rhinoscriptsyntax.ExtrudeCurve(curve_id: System.Guid, path_id: System.Guid) -> System.Guid
+rhinoscriptsyntax.ExtrudeCurvePoint(curve_id: System.Guid, point: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.ExtrudeCurveStraight(curve_id: System.Guid, start_point: Rhino.Geometry.Point3d, end_point: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.ExtrudeSurface(surface: System.Guid, curve: System.Guid, cap: bool = True) -> System.Guid
+rhinoscriptsyntax.FairCurve(curve_id: System.Guid, tolerance: float = 1.0) -> bool
+rhinoscriptsyntax.FilletSurfaces(surface0: System.Guid, surface1: System.Guid, radius: float, uvparam0: Any = None, uvparam1: Any = None) -> System.Guid
+rhinoscriptsyntax.FindFile(filename: str) -> str
+rhinoscriptsyntax.FirstObject(select: bool = False, include_lights: bool = False, include_grips: bool = False) -> System.Guid
+rhinoscriptsyntax.FitCurve(curve_id: System.Guid, degree: float = 3, distance_tolerance: float = -1, angle_tolerance: float = -1) -> System.Guid
+rhinoscriptsyntax.FlashObject(object_ids: Any, style: bool = True) -> None
+rhinoscriptsyntax.FlipSurface(surface_id: System.Guid, flip: bool = None) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.GetAngle(point: Rhino.Geometry.Point3d = None, reference_point: Rhino.Geometry.Point3d = None, default_angle_degrees: float = 0, message: str = None) -> float
+rhinoscriptsyntax.GetBoolean(message: str, items: Any, defaults: Any) -> Any
+rhinoscriptsyntax.GetBox(mode: float = 0, base_point: Rhino.Geometry.Point3d = None, prompt1: str = None, prompt2: str = None, prompt3: str = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.GetColor(color: System.Drawing.Color = [0, 0: Any, 0]: Any) -> System.Drawing.Color
+rhinoscriptsyntax.GetCursorPos() -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.GetCurveObject(message: str = None, preselect: bool = False, select: bool = False) -> Any
+rhinoscriptsyntax.GetDistance(first_pt: Rhino.Geometry.Point3d = None, distance: float = None, first_pt_msg: str = 'First distance point', second_pt_msg: str = 'Second distance point') -> float
+rhinoscriptsyntax.GetDocumentData(section: str = None, entry: str = None) -> Any
+rhinoscriptsyntax.GetDocumentUserText(key: str = None) -> str
+rhinoscriptsyntax.GetEdgeCurves(message: str = None, min_count: float = 1, max_count: float = 0, select: bool = False) -> Any
+rhinoscriptsyntax.GetInteger(message: str = None, number: float = None, minimum: float = None, maximum: float = None) -> float
+rhinoscriptsyntax.GetLayer(title: str = "Select Layer", layer: str = None, show_new_button: bool = False, show_set_current: bool = False) -> str
+rhinoscriptsyntax.GetLayers(title: str = "Select Layers", show_new_button: bool = False) -> str
+rhinoscriptsyntax.GetLine(mode: float = 0, point: Rhino.Geometry.Point3d = None, message1: str = None, message2: str = None, message3: str = None) -> Any
+rhinoscriptsyntax.GetLinetype(default_linetype: str = None, show_by_layer: bool = False) -> str
+rhinoscriptsyntax.GetMeshFaces(object_id: System.Guid, message: str = "", min_count: float = 1, max_count: float = 0) -> Any
+rhinoscriptsyntax.GetMeshVertices(object_id: System.Guid, message: str = "", min_count: float = 1, max_count: float = 0) -> Any
+rhinoscriptsyntax.GetObject(message: str = None, filter: float = 0, preselect: bool = False, select: bool = False, custom_filter: Any = None, subobjects: bool = False) -> System.Guid
+rhinoscriptsyntax.GetObjectEx(message: str = None, filter: float = 0, preselect: bool = False, select: bool = False, objects: Any = None) -> Any
+rhinoscriptsyntax.GetObjectGrip(message: str = None, preselect: bool = False, select: bool = False) -> Any
+rhinoscriptsyntax.GetObjectGrips(message: str = None, preselect: bool = False, select: bool = False) -> Any
+rhinoscriptsyntax.GetObjects(message: str = None, filter: float = 0, group: bool = True, preselect: bool = False, select: bool = False, objects: Any = None, minimum_count: float = 1, maximum_count: float = 0, custom_filter: str = None) -> Any
+rhinoscriptsyntax.GetObjectsEx(message: str = None, filter: float = 0, group: bool = True, preselect: bool = False, select: bool = False, objects: Any = None) -> Any
+rhinoscriptsyntax.GetPlugInObject(plug_in: str) -> Optional[System.Guid]
+rhinoscriptsyntax.GetPoint(message: str = None, base_point: Rhino.Geometry.Point3d = None, distance: float = None, in_plane: bool = False) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.GetPointCoordinates(message: str = "Select points", preselect: bool = False) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.GetPointOnCurve(curve_id: System.Guid, message: str = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.GetPointOnMesh(mesh_id: System.Guid, message: str = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.GetPointOnSurface(surface_id: System.Guid, message: str = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.GetPoints(draw_lines: bool = False, in_plane: bool = False, message1: str = None, message2: str = None, max_points: float = None, base_point: Rhino.Geometry.Point3d = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.GetPolyline(flags: float = 3, message1: str = None, message2: str = None, message3: str = None, message4: str = None, min: float = 2, max: float = 0) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.GetReal(message: str = "Number", number: float = None, minimum: float = None, maximum: float = None) -> float
+rhinoscriptsyntax.GetRectangle(mode: float = 0, base_point: Rhino.Geometry.Point3d = None, prompt1: str = None, prompt2: str = None, prompt3: str = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.GetSettings(filename: str, section: str = None, entry: str = None) -> Any
+rhinoscriptsyntax.GetString(message: str = None, defaultString: str = None, strings: Any = None) -> str
+rhinoscriptsyntax.GetSurfaceObject(message: str = "Select surface", preselect: bool = False, select: bool = False) -> Any
+rhinoscriptsyntax.GetUserText(object_id: System.Guid, key: str = None, attached_to_geometry: bool = False) -> str
+rhinoscriptsyntax.GroupCount() -> float
+rhinoscriptsyntax.GroupNames() -> Any
+rhinoscriptsyntax.HatchPattern(hatch_id: System.Guid, hatch_pattern: str = None) -> str
+rhinoscriptsyntax.HatchPatternCount() -> float
+rhinoscriptsyntax.HatchPatternDescription(hatch_pattern: str) -> str
+rhinoscriptsyntax.HatchPatternFillType(hatch_pattern: str) -> float
+rhinoscriptsyntax.HatchPatternNames() -> Any
+rhinoscriptsyntax.HatchRotation(hatch_id: System.Guid, rotation: float = None) -> float
+rhinoscriptsyntax.HatchScale(hatch_id: System.Guid, scale: float = None) -> float
+rhinoscriptsyntax.HiddenObjects(include_lights: bool = False, include_grips: bool = False, include_references: Any = False) -> Any
+rhinoscriptsyntax.HideGroup(group_name: str) -> float
+rhinoscriptsyntax.HideObject(object_id: System.Guid) -> bool
+rhinoscriptsyntax.HideObjects(object_ids: Any) -> float
+rhinoscriptsyntax.HideToolbar(name: str, toolbar_group: str) -> bool
+rhinoscriptsyntax.InCommand(ignore_runners: bool = True) -> float
+rhinoscriptsyntax.InsertBlock(block_name: str, insertion_point: Rhino.Geometry.Point3d, scale: Any = (1,1,1), angle_degrees: float = 0, rotation_normal: Rhino.Geometry.Vector3d = (0,0,1)) -> System.Guid
+rhinoscriptsyntax.InsertBlock2(block_name: str, xform: Rhino.Geometry.Transform) -> System.Guid
+rhinoscriptsyntax.InsertCurveKnot(curve_id: System.Guid, parameter: float, symmetrical: bool = False) -> bool
+rhinoscriptsyntax.InstallFolder() -> str
+rhinoscriptsyntax.IntersectBreps(brep1: System.Guid, brep2: System.Guid, tolerance: float = None) -> Any
+rhinoscriptsyntax.IntersectPlanes(plane1: Rhino.Geometry.Plane, plane2: Rhino.Geometry.Plane, plane3: Rhino.Geometry.Plane) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.IntersectSpheres(sphere_plane0: Rhino.Geometry.Plane, sphere_radius0: float, sphere_plane1: Rhino.Geometry.Plane, sphere_radius1: float) -> Any
+rhinoscriptsyntax.InvertSelectedObjects(include_lights: bool = False, include_grips: bool = False, include_references: bool = False) -> Any
+rhinoscriptsyntax.IsAlias(alias: str) -> bool
+rhinoscriptsyntax.IsAlignedDimension(object_id: System.Guid) -> Optional[bool]
+rhinoscriptsyntax.IsAngularDimension(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsArc(curve_id: System.Guid, segment_index: float = -1) -> bool
+rhinoscriptsyntax.IsBlock(block_name: str) -> bool
+rhinoscriptsyntax.IsBlockEmbedded(block_name: str) -> bool
+rhinoscriptsyntax.IsBlockInUse(block_name: str, where_to_look: float = 0) -> bool
+rhinoscriptsyntax.IsBlockInstance(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsBlockReference(block_name: str) -> bool
+rhinoscriptsyntax.IsBrep(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsCircle(curve_id: System.Guid, tolerance: float = None) -> bool
+rhinoscriptsyntax.IsClippingPlane(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsCommand(command_name: str) -> bool
+rhinoscriptsyntax.IsCone(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsCurve(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsCurveClosable(curve_id: System.Guid, tolerance: Any = None) -> bool
+rhinoscriptsyntax.IsCurveClosed(object_id: System.Guid) -> Optional[bool]
+rhinoscriptsyntax.IsCurveInPlane(object_id: System.Guid, plane: Rhino.Geometry.Plane = None) -> bool
+rhinoscriptsyntax.IsCurveLinear(object_id: Any, segment_index: float = -1) -> bool
+rhinoscriptsyntax.IsCurvePeriodic(curve_id: System.Guid, segment_index: float = -1) -> bool
+rhinoscriptsyntax.IsCurvePlanar(curve_id: System.Guid, segment_index: float = -1) -> bool
+rhinoscriptsyntax.IsCurveRational(curve_id: System.Guid, segment_index: float = -1) -> bool
+rhinoscriptsyntax.IsCylinder(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsDetail(layout: Any, detail: Any) -> bool
+rhinoscriptsyntax.IsDiameterDimension(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsDimStyle(dimstyle: str) -> bool
+rhinoscriptsyntax.IsDimStyleReference(dimstyle: str) -> bool
+rhinoscriptsyntax.IsDimension(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsDirectionalLight(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsDocumentData() -> bool
+rhinoscriptsyntax.IsDocumentModified() -> Optional[bool]
+rhinoscriptsyntax.IsDocumentUserText() -> bool
+rhinoscriptsyntax.IsEllipse(object_id: Any, segment_index: float = -1) -> bool
+rhinoscriptsyntax.IsGroup(group_name: str) -> bool
+rhinoscriptsyntax.IsGroupEmpty(group_name: str) -> bool
+rhinoscriptsyntax.IsHatch(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsHatchPattern(name: str) -> bool
+rhinoscriptsyntax.IsHatchPatternCurrent(hatch_pattern: str) -> bool
+rhinoscriptsyntax.IsHatchPatternReference(hatch_pattern: str) -> bool
+rhinoscriptsyntax.IsLayer(layer: Any) -> bool
+rhinoscriptsyntax.IsLayerChangeable(layer: Any) -> bool
+rhinoscriptsyntax.IsLayerChildOf(layer: Any, test: Any) -> bool
+rhinoscriptsyntax.IsLayerCurrent(layer: Any) -> bool
+rhinoscriptsyntax.IsLayerEmpty(layer: Any) -> bool
+rhinoscriptsyntax.IsLayerExpanded(layer: Any) -> bool
+rhinoscriptsyntax.IsLayerLocked(layer: Any) -> Any
+rhinoscriptsyntax.IsLayerOn(layer: Any) -> bool
+rhinoscriptsyntax.IsLayerParentOf(layer: Any, test: Any) -> bool
+rhinoscriptsyntax.IsLayerReference(layer: Any) -> bool
+rhinoscriptsyntax.IsLayerSelectable(layer: Any) -> bool
+rhinoscriptsyntax.IsLayerVisible(layer: Any) -> bool
+rhinoscriptsyntax.IsLayout(layout: Any) -> bool
+rhinoscriptsyntax.IsLayoutObject(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsLeader(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsLight(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsLightEnabled(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsLightReference(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsLine(object_id: Any, segment_index: float = -1) -> bool
+rhinoscriptsyntax.IsLinearDimension(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsLinearLight(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsLinetype(name_or_id: Any) -> bool
+rhinoscriptsyntax.IsLinetypeReference(name_or_id: Any) -> bool
+rhinoscriptsyntax.IsMaterialDefault(material_index: float) -> bool
+rhinoscriptsyntax.IsMaterialReference(material_index: float) -> bool
+rhinoscriptsyntax.IsMesh(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsMeshClosed(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsMeshManifold(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsObject(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsObjectHidden(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsObjectInBox(object_id: System.Guid, box: Rhino.Geometry.Point3d, test_mode: bool = True) -> bool
+rhinoscriptsyntax.IsObjectInGroup(object_id: System.Guid, group_name: str = None) -> bool
+rhinoscriptsyntax.IsObjectLocked(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsObjectNormal(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsObjectReference(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsObjectSelectable(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsObjectSelected(object_id: System.Guid) -> int
+rhinoscriptsyntax.IsObjectSolid(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsObjectValid(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsOrdinateDimension(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsPlaneSurface(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsPlugIn(plugin: System.Guid) -> bool
+rhinoscriptsyntax.IsPoint(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsPointCloud(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsPointInSurface(object_id: System.Guid, point: Rhino.Geometry.Point3d, strictly_in: bool = False, tolerance: float = None) -> bool
+rhinoscriptsyntax.IsPointLight(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsPointOnCurve(object_id: Any, point: Rhino.Geometry.Point3d, segment_index: float = -1) -> bool
+rhinoscriptsyntax.IsPointOnMesh(object_id: System.Guid, point: Rhino.Geometry.Point3d) -> bool
+rhinoscriptsyntax.IsPointOnSurface(object_id: System.Guid, point: Rhino.Geometry.Point3d) -> bool
+rhinoscriptsyntax.IsPolyCurve(object_id: Any, segment_index: float = -1) -> bool
+rhinoscriptsyntax.IsPolyline(object_id: Any, segment_index: float = -1) -> bool
+rhinoscriptsyntax.IsPolysurface(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsPolysurfaceClosed(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsRadialDimension(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsRectangularLight(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsRunningOnWindows() -> bool
+rhinoscriptsyntax.IsSphere(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsSpotLight(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsSurface(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsSurfaceClosed(surface_id: System.Guid, direction: float) -> bool
+rhinoscriptsyntax.IsSurfacePeriodic(surface_id: System.Guid, direction: float) -> bool
+rhinoscriptsyntax.IsSurfacePlanar(surface_id: System.Guid, tolerance: float = None) -> bool
+rhinoscriptsyntax.IsSurfaceRational(surface_id: System.Guid) -> bool
+rhinoscriptsyntax.IsSurfaceSingular(surface_id: System.Guid, direction: float) -> bool
+rhinoscriptsyntax.IsSurfaceTrimmed(surface_id: System.Guid) -> bool
+rhinoscriptsyntax.IsText(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsTextDot(object_id: System.Guid) -> bool
+rhinoscriptsyntax.IsToolbar(name: str, toolbar: str, group: bool = False) -> bool
+rhinoscriptsyntax.IsToolbarCollection(file: str) -> str
+rhinoscriptsyntax.IsToolbarDocked(name: str, toolbar_group: str) -> bool
+rhinoscriptsyntax.IsToolbarVisible(name: str, toolbar_group: str) -> bool
+rhinoscriptsyntax.IsTorus(surface_id: System.Guid) -> bool
+rhinoscriptsyntax.IsUserText(object_id: System.Guid) -> float
+rhinoscriptsyntax.IsVectorParallelTo(vector1: Rhino.Geometry.Vector3d, vector2: Rhino.Geometry.Vector3d) -> float
+rhinoscriptsyntax.IsVectorPerpendicularTo(vector1: Rhino.Geometry.Vector3d, vector2: Rhino.Geometry.Vector3d) -> bool
+rhinoscriptsyntax.IsVectorTiny(vector: Rhino.Geometry.Vector3d) -> bool
+rhinoscriptsyntax.IsVectorZero(vector: Rhino.Geometry.Vector3d) -> bool
+rhinoscriptsyntax.IsView(view: Any) -> bool
+rhinoscriptsyntax.IsViewCurrent(view: Any) -> bool
+rhinoscriptsyntax.IsViewMaximized(view: Any = None) -> bool
+rhinoscriptsyntax.IsViewPerspective(view: Any) -> bool
+rhinoscriptsyntax.IsViewTitleVisible(view: Any = None) -> bool
+rhinoscriptsyntax.IsVisibleInView(object_id: System.Guid, view: str = None) -> Optional[bool]
+rhinoscriptsyntax.IsWallpaper(view: Any) -> bool
+rhinoscriptsyntax.IsXformIdentity(xform: Rhino.Geometry.Transform) -> bool
+rhinoscriptsyntax.IsXformSimilarity(xform: Rhino.Geometry.Transform) -> bool
+rhinoscriptsyntax.IsXformZero(xform: Rhino.Geometry.Transform) -> bool
+rhinoscriptsyntax.JoinCurves(object_ids: System.Guid, delete_input: bool = False, tolerance: float = None) -> Any
+rhinoscriptsyntax.JoinMeshes(object_ids: Any, delete_input: bool = False) -> System.Guid
+rhinoscriptsyntax.JoinSurfaces(object_ids: Any, delete_input: bool = False, return_all: bool = False) -> System.Guid
+rhinoscriptsyntax.LastCommandName() -> str
+rhinoscriptsyntax.LastCommandResult() -> float
+rhinoscriptsyntax.LastCreatedObjects(select: bool = False) -> Any
+rhinoscriptsyntax.LastObject(select: bool = False, include_lights: bool = False, include_grips: bool = False) -> System.Guid
+rhinoscriptsyntax.LayerChildCount(layer: Any) -> float
+rhinoscriptsyntax.LayerChildren(layer: Any) -> Any
+rhinoscriptsyntax.LayerColor(layer: Any, color: System.Drawing.Color = None) -> System.Drawing.Color
+rhinoscriptsyntax.LayerCount() -> float
+rhinoscriptsyntax.LayerId(layer: str) -> Any
+rhinoscriptsyntax.LayerIds() -> Any
+rhinoscriptsyntax.LayerLinetype(layer: str, linetype: str = None) -> str
+rhinoscriptsyntax.LayerLocked(layer: str, locked: bool = None) -> bool
+rhinoscriptsyntax.LayerMaterialIndex(layer: str, index: float = None) -> float
+rhinoscriptsyntax.LayerName(layer_id: System.Guid, fullpath: bool = True) -> str
+rhinoscriptsyntax.LayerNames(sort: bool = False) -> Any
+rhinoscriptsyntax.LayerOrder(layer: str) -> float
+rhinoscriptsyntax.LayerPrintColor(layer: str, color: System.Drawing.Color = None) -> System.Drawing.Color
+rhinoscriptsyntax.LayerPrintWidth(layer: str, width: float = None) -> float
+rhinoscriptsyntax.LayerVisible(layer: str, visible: bool = None, forcevisible_or_donotpersist: bool = False) -> bool
+rhinoscriptsyntax.LeaderText(object_id: System.Guid, text: str = None) -> Optional[str]
+rhinoscriptsyntax.LightColor(object_id: System.Guid, color: System.Drawing.Color = None) -> System.Drawing.Color
+rhinoscriptsyntax.LightCount() -> float
+rhinoscriptsyntax.LightDirection(object_id: System.Guid, direction: Rhino.Geometry.Vector3d = None) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.LightLocation(object_id: System.Guid, location: Rhino.Geometry.Point3d = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.LightName(object_id: System.Guid, name: str = None) -> str
+rhinoscriptsyntax.LightObjects() -> Any
+rhinoscriptsyntax.LineClosestPoint(line: Rhino.Geometry.Point3d, testpoint: Rhino.Geometry.Point3d) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.LineCylinderIntersection(line: Any, cylinder_plane: Rhino.Geometry.Plane, cylinder_height: float, cylinder_radius: float) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.LineFitFromPoints(points: Rhino.Geometry.Point3d) -> Any
+rhinoscriptsyntax.LineIsFartherThan(line: Rhino.Geometry.Point3d, distance: float, point_or_line: Rhino.Geometry.Point3d) -> bool
+rhinoscriptsyntax.LineLineIntersection(lineA: Any, lineB: Any) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.LineMaxDistanceTo(line: Rhino.Geometry.Point3d, point_or_line: Rhino.Geometry.Point3d) -> float
+rhinoscriptsyntax.LineMinDistanceTo(line: Rhino.Geometry.Point3d, point_or_line: Rhino.Geometry.Point3d) -> float
+rhinoscriptsyntax.LinePlane(line: Rhino.Geometry.Point3d) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.LinePlaneIntersection(line: Rhino.Geometry.Point3d, plane: Rhino.Geometry.Plane) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.LineSphereIntersection(line: Rhino.Geometry.Point3d, sphere_center: Rhino.Geometry.Point3d, sphere_radius: float) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.LineTransform(line: System.Guid, xform: Rhino.Geometry.Transform) -> System.Guid
+rhinoscriptsyntax.LinetypeCount() -> float
+rhinoscriptsyntax.LinetypeNames(sort: bool = False) -> Any
+rhinoscriptsyntax.ListBox(items: Any, message: str = None, title: str = None, default: str = None) -> str
+rhinoscriptsyntax.LocaleID() -> float
+rhinoscriptsyntax.LockGroup(group_name: str) -> float
+rhinoscriptsyntax.LockObject(object_id: System.Guid) -> bool
+rhinoscriptsyntax.LockObjects(object_ids: Any) -> float
+rhinoscriptsyntax.LockedObjects(include_lights: bool = False, include_grips: bool = False, include_references: Any = False) -> Any
+rhinoscriptsyntax.MakeCurveNonPeriodic(curve_id: System.Guid, delete_input: bool = False) -> System.Guid
+rhinoscriptsyntax.MakeSurfacePeriodic(surface_id: System.Guid, direction: float, delete_input: bool = False) -> System.Guid
+rhinoscriptsyntax.MatchMaterial(source: Any, destination: Any) -> float
+rhinoscriptsyntax.MatchObjectAttributes(target_ids: Any, source_id: System.Guid = None) -> float
+rhinoscriptsyntax.MaterialBump(material_index: float, filename: str = None) -> str
+rhinoscriptsyntax.MaterialColor(material_index: float, color: System.Drawing.Color = None) -> System.Drawing.Color
+rhinoscriptsyntax.MaterialEnvironmentMap(material_index: float, filename: str = None) -> str
+rhinoscriptsyntax.MaterialName(material_index: float, name: str = None) -> str
+rhinoscriptsyntax.MaterialReflectiveColor(material_index: float, color: System.Drawing.Color = None) -> System.Drawing.Color
+rhinoscriptsyntax.MaterialShine(material_index: float, shine: float = None) -> float
+rhinoscriptsyntax.MaterialTexture(material_index: float, filename: str = None) -> str
+rhinoscriptsyntax.MaterialTransparency(material_index: float, transparency: float = None) -> float
+rhinoscriptsyntax.MaterialTransparencyMap(material_index: float, filename: str = None) -> str
+rhinoscriptsyntax.MaximizeRestoreView(view: Any = None) -> None
+rhinoscriptsyntax.MeanCurve(curve0: System.Guid, curve1: System.Guid, tolerance: float = None) -> System.Guid
+rhinoscriptsyntax.MeshArea(object_ids: Any) -> Any
+rhinoscriptsyntax.MeshAreaCentroid(object_id: System.Guid) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.MeshBooleanDifference(input0: System.Guid, input1: System.Guid, delete_input: bool = True, tolerance: float = None) -> Any
+rhinoscriptsyntax.MeshBooleanIntersection(input0: System.Guid, input1: System.Guid, delete_input: bool = True) -> Any
+rhinoscriptsyntax.MeshBooleanSplit(input0: System.Guid, input1: System.Guid, delete_input: bool = True) -> Any
+rhinoscriptsyntax.MeshBooleanUnion(mesh_ids: Any, delete_input: bool = True) -> Any
+rhinoscriptsyntax.MeshClosestPoint(object_id: System.Guid, point: Rhino.Geometry.Point3d, maximum_distance: float = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.MeshFaceCenters(mesh_id: System.Guid) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.MeshFaceCount(object_id: System.Guid) -> float
+rhinoscriptsyntax.MeshFaceNormals(mesh_id: System.Guid) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.MeshFaceVertices(object_id: System.Guid) -> Any
+rhinoscriptsyntax.MeshFaces(object_id: System.Guid, face_type: bool = True) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.MeshHasFaceNormals(object_id: System.Guid) -> bool
+rhinoscriptsyntax.MeshHasTextureCoordinates(object_id: System.Guid) -> bool
+rhinoscriptsyntax.MeshHasVertexColors(object_id: System.Guid) -> bool
+rhinoscriptsyntax.MeshHasVertexNormals(object_id: System.Guid) -> bool
+rhinoscriptsyntax.MeshMeshIntersection(mesh1: System.Guid, mesh2: System.Guid, tolerance: float = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.MeshNakedEdgePoints(object_id: System.Guid) -> Any
+rhinoscriptsyntax.MeshOffset(mesh_id: System.Guid, distance: Optional[float] = None) -> System.Guid
+rhinoscriptsyntax.MeshOutline(object_ids: Any, view: str = None) -> Any
+rhinoscriptsyntax.MeshPolyline(polyline_id: System.Guid) -> System.Guid
+rhinoscriptsyntax.MeshQuadCount(object_id: System.Guid) -> float
+rhinoscriptsyntax.MeshQuadsToTriangles(object_id: System.Guid) -> bool
+rhinoscriptsyntax.MeshToNurb(object_id: System.Guid, trimmed_triangles: bool = True, delete_input: bool = False) -> Any
+rhinoscriptsyntax.MeshTriangleCount(object_id: System.Guid) -> float
+rhinoscriptsyntax.MeshVertexColors(mesh_id: System.Guid, colors: Any = 0) -> System.Drawing.Color
+rhinoscriptsyntax.MeshVertexCount(object_id: System.Guid) -> float
+rhinoscriptsyntax.MeshVertexFaces(mesh_id: System.Guid, vertex_index: float) -> Any
+rhinoscriptsyntax.MeshVertexNormals(mesh_id: System.Guid) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.MeshVertices(object_id: System.Guid) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.MeshVolume(object_ids: Any) -> Any
+rhinoscriptsyntax.MeshVolumeCentroid(object_id: System.Guid) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.MessageBox(message: str, buttons: float = 0, title: str = "") -> float
+rhinoscriptsyntax.MirrorObject(object_id: System.Guid, start_point: Rhino.Geometry.Point3d, end_point: Rhino.Geometry.Point3d, copy: bool = False) -> System.Guid
+rhinoscriptsyntax.MirrorObjects(object_ids: Any, start_point: Rhino.Geometry.Point3d, end_point: Rhino.Geometry.Point3d, copy: bool = False) -> Any
+rhinoscriptsyntax.MoveObject(object_id: System.Guid, translation: Rhino.Geometry.Vector3d) -> System.Guid
+rhinoscriptsyntax.MoveObjects(object_ids: Any, translation: Rhino.Geometry.Vector3d) -> Any
+rhinoscriptsyntax.MovePlane(plane: Rhino.Geometry.Plane, origin: Rhino.Geometry.Point3d) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.MultiListBox(items: Any, message: str = None, title: str = None, defaults: Any = None) -> Any
+rhinoscriptsyntax.NamedCPlane(name: str) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.NamedCPlanes() -> Any
+rhinoscriptsyntax.NamedViews() -> Any
+rhinoscriptsyntax.NextObject(object_id: System.Guid, select: bool = False, include_lights: bool = False, include_grips: bool = False) -> System.Guid
+rhinoscriptsyntax.NextObjectGrip(object_id: System.Guid, index: float, direction: Any = 0, enable: bool = True) -> float
+rhinoscriptsyntax.NormalObjects(include_lights: bool = False, include_grips: Any = False) -> Any
+rhinoscriptsyntax.Notes(newnotes: str = None) -> str
+rhinoscriptsyntax.ObjectColor(object_ids: Any, color: System.Drawing.Color = None) -> System.Drawing.Color
+rhinoscriptsyntax.ObjectColorSource(object_ids: Any, source: float = None) -> System.Drawing.Color
+rhinoscriptsyntax.ObjectDescription(object_id: Any) -> Any
+rhinoscriptsyntax.ObjectGripCount(object_id: System.Guid) -> float
+rhinoscriptsyntax.ObjectGripLocation(object_id: System.Guid, index: float, point: Rhino.Geometry.Point3d = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.ObjectGripLocations(object_id: System.Guid, points: Rhino.Geometry.Point3d = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.ObjectGripsOn(object_id: System.Guid) -> bool
+rhinoscriptsyntax.ObjectGripsSelected(object_id: System.Guid) -> bool
+rhinoscriptsyntax.ObjectGroups(object_id: Any) -> Any
+rhinoscriptsyntax.ObjectLayer(object_id: Any, layer: str = None) -> str
+rhinoscriptsyntax.ObjectLayout(object_id: System.Guid, layout: Any = None, return_name: Any = True) -> str
+rhinoscriptsyntax.ObjectLinetype(object_ids: Any, linetype: str = None) -> str
+rhinoscriptsyntax.ObjectLinetypeSource(object_ids: Any, source: float = None) -> float
+rhinoscriptsyntax.ObjectMaterialIndex(object_id: System.Guid, material_index: Any = None) -> float
+rhinoscriptsyntax.ObjectMaterialSource(object_ids: Any, source: float = None) -> float
+rhinoscriptsyntax.ObjectName(object_id: Any, name: str = None) -> str
+rhinoscriptsyntax.ObjectPrintColor(object_ids: Any, color: System.Drawing.Color = None) -> System.Drawing.Color
+rhinoscriptsyntax.ObjectPrintColorSource(object_ids: Any, source: float = None) -> float
+rhinoscriptsyntax.ObjectPrintWidth(object_ids: Any, width: float = None) -> float
+rhinoscriptsyntax.ObjectPrintWidthSource(object_ids: Any, source: float = None) -> float
+rhinoscriptsyntax.ObjectTopGroup(object_id: System.Guid) -> str
+rhinoscriptsyntax.ObjectType(object_id: System.Guid) -> float
+rhinoscriptsyntax.ObjectsByColor(color: System.Drawing.Color, select: bool = False, include_lights: bool = False) -> Any
+rhinoscriptsyntax.ObjectsByGroup(group_name: str, select: bool = False) -> Any
+rhinoscriptsyntax.ObjectsByLayer(layer_name: str, select: bool = False) -> Any
+rhinoscriptsyntax.ObjectsByName(name: str, select: bool = False, include_lights: bool = False, include_references: Any = False) -> Any
+rhinoscriptsyntax.ObjectsByType(geometry_type: float, select: bool = False, state: bool = 0) -> Any
+rhinoscriptsyntax.OffsetCurve(object_id: System.Guid, direction: Rhino.Geometry.Point3d, distance: float, normal: Rhino.Geometry.Vector3d = None, style: float = 1) -> Any
+rhinoscriptsyntax.OffsetCurveOnSurface(curve_id: System.Guid, surface_id: System.Guid, distance_or_parameter: Any) -> Any
+rhinoscriptsyntax.OffsetSurface(surface_id: System.Guid, distance: float, tolerance: float = None, both_sides: bool = False, create_solid: bool = False) -> System.Guid
+rhinoscriptsyntax.OpenFileName(title: str = None, filter: str = None, folder: str = None, filename: str = None, extension: str = None) -> str
+rhinoscriptsyntax.OpenFileNames(title: str = None, filter: str = None, folder: str = None, filename: str = None, extension: str = None) -> Any
+rhinoscriptsyntax.OpenToolbarCollection(file: str) -> str
+rhinoscriptsyntax.OrientObject(object_id: System.Guid, reference: Rhino.Geometry.Point3d, target: Rhino.Geometry.Point3d, flags: float = 0) -> System.Guid
+rhinoscriptsyntax.Ortho(enable: bool = None) -> bool
+rhinoscriptsyntax.Osnap(enable: bool = None) -> bool
+rhinoscriptsyntax.OsnapDialog(visible: bool = None) -> bool
+rhinoscriptsyntax.OsnapMode(mode: float = None) -> float
+rhinoscriptsyntax.ParentLayer(layer: str, parent: str = None) -> str
+rhinoscriptsyntax.Planar(enable: bool = None) -> bool
+rhinoscriptsyntax.PlanarClosedCurveContainment(curve_a: System.Guid, curve_b: System.Guid, plane: Rhino.Geometry.Plane = None, tolerance: float = None) -> float
+rhinoscriptsyntax.PlanarCurveCollision(curve_a: System.Guid, curve_b: System.Guid, plane: Rhino.Geometry.Plane = None, tolerance: float = None) -> bool
+rhinoscriptsyntax.PlaneClosestPoint(plane: Rhino.Geometry.Plane, point: Rhino.Geometry.Point3d, return_point: bool = True) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.PlaneCurveIntersection(plane: Rhino.Geometry.Plane, curve: System.Guid, tolerance: Any = None) -> Any
+rhinoscriptsyntax.PlaneEquation(plane: Rhino.Geometry.Plane) -> Any
+rhinoscriptsyntax.PlaneFitFromPoints(points: Rhino.Geometry.Point3d) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.PlaneFromFrame(origin: Rhino.Geometry.Point3d, x_axis: Rhino.Geometry.Vector3d, y_axis: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.PlaneFromNormal(origin: Rhino.Geometry.Point3d, normal: Rhino.Geometry.Vector3d, xaxis: Rhino.Geometry.Vector3d = None) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.PlaneFromPoints(origin: Rhino.Geometry.Point3d, x: Rhino.Geometry.Point3d, y: Rhino.Geometry.Point3d) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.PlanePlaneIntersection(plane1: Rhino.Geometry.Plane, plane2: Rhino.Geometry.Plane) -> Any
+rhinoscriptsyntax.PlaneSphereIntersection(plane: Rhino.Geometry.Plane, sphere_plane: Rhino.Geometry.Plane, sphere_radius: float) -> Any
+rhinoscriptsyntax.PlaneTransform(plane: Rhino.Geometry.Plane, xform: Rhino.Geometry.Transform) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.PlugInId(plugin: System.Guid) -> System.Guid
+rhinoscriptsyntax.PlugIns(types: float = 0, status: float = 0) -> List[str]
+rhinoscriptsyntax.PointAdd(point1: Rhino.Geometry.Point3d, point2: Rhino.Geometry.Point3d) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.PointArrayBoundingBox(points: Rhino.Geometry.Point3d, view_or_plane: Rhino.Geometry.Plane = None, in_world_coords: bool = True) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.PointArrayClosestPoint(points: Rhino.Geometry.Point3d, test_point: Rhino.Geometry.Point3d) -> float
+rhinoscriptsyntax.PointArrayTransform(points: Rhino.Geometry.Point3d, xform: Rhino.Geometry.Transform) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.PointClosestObject(point: Rhino.Geometry.Point3d, object_ids: Any) -> Any
+rhinoscriptsyntax.PointCloudClosestPoints(pt_cloud: Rhino.Geometry.Point3d, needle_points: Rhino.Geometry.Point3d, distance: float) -> Any
+rhinoscriptsyntax.PointCloudCount(object_id: System.Guid) -> float
+rhinoscriptsyntax.PointCloudHasHiddenPoints(object_id: System.Guid) -> bool
+rhinoscriptsyntax.PointCloudHasPointColors(object_id: System.Guid) -> bool
+rhinoscriptsyntax.PointCloudHidePoints(object_id: System.Guid, hidden: Any = []) -> Any
+rhinoscriptsyntax.PointCloudKNeighbors(pt_cloud: Rhino.Geometry.Point3d, needle_points: Rhino.Geometry.Point3d, amount: int = 1) -> Any
+rhinoscriptsyntax.PointCloudPointColors(object_id: System.Guid, colors: System.Drawing.Color = []) -> System.Drawing.Color
+rhinoscriptsyntax.PointCloudPoints(object_id: System.Guid) -> Any
+rhinoscriptsyntax.PointCompare(point1: Rhino.Geometry.Point3d, point2: Rhino.Geometry.Point3d, tolerance: float = None) -> bool
+rhinoscriptsyntax.PointCoordinates(object_id: System.Guid, point: Rhino.Geometry.Point3d = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.PointDivide(point: Rhino.Geometry.Point3d, divide: float) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.PointInPlanarClosedCurve(point: Rhino.Geometry.Point3d, curve: System.Guid, plane: Rhino.Geometry.Plane = None, tolerance: float = None) -> float
+rhinoscriptsyntax.PointScale(point: Rhino.Geometry.Point3d, scale: float) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.PointSubtract(point1: Rhino.Geometry.Point3d, point2: Rhino.Geometry.Point3d) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.PointTransform(point: Rhino.Geometry.Point3d, xform: Rhino.Geometry.Transform) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.PointsAreCoplanar(points: Rhino.Geometry.Point3d, tolerance: float = 1.0e-12) -> bool
+rhinoscriptsyntax.Polar(point: Rhino.Geometry.Point3d, angle_degrees: Any, distance: Any, plane: Rhino.Geometry.Plane = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.PolyCurveCount(curve_id: System.Guid, segment_index: float = -1) -> float
+rhinoscriptsyntax.PolylineVertices(curve_id: System.Guid, segment_index: float = -1) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.PopupMenu(items: Any, modes: Any = None, point: Rhino.Geometry.Point3d = None, view: str = None) -> float
+rhinoscriptsyntax.PrevObjectGrip(object_id: System.Guid, index: float, direction: Any = 0, enable: bool = True) -> float
+rhinoscriptsyntax.ProjectCurveToMesh(curve_ids: Any, mesh_ids: Any, direction: Rhino.Geometry.Vector3d) -> Any
+rhinoscriptsyntax.ProjectCurveToSurface(curve_ids: Any, surface_ids: Any, direction: Rhino.Geometry.Vector3d) -> Any
+rhinoscriptsyntax.ProjectOsnaps(enable: bool = None) -> bool
+rhinoscriptsyntax.ProjectPointToMesh(points: Rhino.Geometry.Point3d, mesh_ids: Any, direction: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.ProjectPointToSurface(points: Rhino.Geometry.Point3d, surface_ids: Any, direction: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.Prompt(message: str = None) -> None
+rhinoscriptsyntax.PropertyListBox(items: Any, values: Any, message: str = None, title: str = None) -> Any
+rhinoscriptsyntax.PullCurve(surface: System.Guid, curve: System.Guid, delete_input: bool = False) -> Any
+rhinoscriptsyntax.PullCurveToMesh(mesh_id: System.Guid, curve_id: System.Guid) -> System.Guid
+rhinoscriptsyntax.PullPoints(object_id: System.Guid, points: Rhino.Geometry.Point3d) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.PurgeLayer(layer: Any) -> bool
+rhinoscriptsyntax.ReadFileVersion() -> str
+rhinoscriptsyntax.RealBox(message: str = "", default_number: float = None, title: str = "", minimum: float = None, maximum: float = None) -> float
+rhinoscriptsyntax.RebuildCurve(curve_id: System.Guid, degree: float = 3, point_count: float = 10) -> bool
+rhinoscriptsyntax.RebuildSurface(object_id: System.Guid, degree: Any = (3,3), pointcount: Any = (10,10)) -> bool
+rhinoscriptsyntax.RectangularLightPlane(object_id: System.Guid) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.Redraw() -> None
+rhinoscriptsyntax.RemoveCurveKnot(curve: System.Guid, parameter: float) -> bool
+rhinoscriptsyntax.RemoveObjectFromAllGroups(object_id: System.Guid) -> bool
+rhinoscriptsyntax.RemoveObjectFromGroup(object_id: System.Guid, group_name: str) -> bool
+rhinoscriptsyntax.RemoveObjectsFromGroup(object_ids: Any, group_name: str) -> float
+rhinoscriptsyntax.RemoveSurfaceKnot(surface: System.Guid, uv_parameter: Any, v_direction: bool) -> bool
+rhinoscriptsyntax.RenameBlock(block_name: str, new_name: str) -> bool
+rhinoscriptsyntax.RenameDimStyle(oldstyle: str, newstyle: str) -> str
+rhinoscriptsyntax.RenameGroup(old_name: str, new_name: str) -> str
+rhinoscriptsyntax.RenameLayer(oldname: str, newname: str) -> str
+rhinoscriptsyntax.RenameView(old_title: Any, new_title: str) -> str
+rhinoscriptsyntax.RenderAntialias(style: float = None) -> float
+rhinoscriptsyntax.RenderColor(item: float, color: System.Drawing.Color = None) -> System.Drawing.Color
+rhinoscriptsyntax.RenderMeshDensity(density: float = None) -> float
+rhinoscriptsyntax.RenderMeshMaxAngle(angle_degrees: float = None) -> float
+rhinoscriptsyntax.RenderMeshMaxAspectRatio(ratio: float = None) -> float
+rhinoscriptsyntax.RenderMeshMaxDistEdgeToSrf(distance: float = None) -> float
+rhinoscriptsyntax.RenderMeshMaxEdgeLength(distance: float = None) -> float
+rhinoscriptsyntax.RenderMeshMinEdgeLength(distance: float = None) -> float
+rhinoscriptsyntax.RenderMeshMinInitialGridQuads(quads: float = None) -> float
+rhinoscriptsyntax.RenderMeshQuality(quality: float = None) -> float
+rhinoscriptsyntax.RenderMeshSettings(settings: float = None) -> float
+rhinoscriptsyntax.RenderResolution(resolution: Any = None) -> Any
+rhinoscriptsyntax.RenderSettings(settings: float = None) -> float
+rhinoscriptsyntax.ResetMaterial(material_index: float) -> bool
+rhinoscriptsyntax.RestoreNamedCPlane(cplane_name: str, view: Any = None) -> str
+rhinoscriptsyntax.RestoreNamedView(named_view: str, view: Any = None, restore_bitmap: Any = False) -> str
+rhinoscriptsyntax.ReverseCurve(curve_id: System.Guid) -> bool
+rhinoscriptsyntax.ReverseSurface(surface_id: System.Guid, direction: float) -> bool
+rhinoscriptsyntax.RotateCamera(view: Any = None, direction: float = 0, angle: Any = None) -> bool
+rhinoscriptsyntax.RotateObject(object_id: System.Guid, center_point: Rhino.Geometry.Point3d, rotation_angle: float, axis: Rhino.Geometry.Plane = None, copy: bool = False) -> System.Guid
+rhinoscriptsyntax.RotateObjects(object_ids: Any, center_point: Rhino.Geometry.Point3d, rotation_angle: float, axis: Rhino.Geometry.Plane = None, copy: bool = False) -> Any
+rhinoscriptsyntax.RotatePlane(plane: Rhino.Geometry.Plane, angle_degrees: float, axis: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.RotateView(view: Any = None, direction: float = 0, angle: float = None) -> bool
+rhinoscriptsyntax.SaveFileName(title: str = None, filter: str = None, folder: str = None, filename: str = None, extension: str = None) -> str
+rhinoscriptsyntax.SaveToolbarCollection(name: str) -> bool
+rhinoscriptsyntax.SaveToolbarCollectionAs(name: str, file: str) -> bool
+rhinoscriptsyntax.ScaleObject(object_id: System.Guid, origin: Rhino.Geometry.Point3d, scale: Any, copy: bool = False) -> System.Guid
+rhinoscriptsyntax.ScaleObjects(object_ids: Any, origin: Rhino.Geometry.Point3d, scale: Any, copy: bool = False) -> Any
+rhinoscriptsyntax.ScreenSize() -> Any
+rhinoscriptsyntax.SdkVersion() -> str
+rhinoscriptsyntax.SearchPathCount() -> float
+rhinoscriptsyntax.SearchPathList() -> List[str]
+rhinoscriptsyntax.SelectObject(object_id: System.Guid, redraw: Any = True) -> bool
+rhinoscriptsyntax.SelectObjectGrip(object_id: System.Guid, index: float) -> bool
+rhinoscriptsyntax.SelectObjectGrips(object_id: System.Guid) -> float
+rhinoscriptsyntax.SelectObjects(object_ids: Any) -> float
+rhinoscriptsyntax.SelectedObjectGrips(object_id: System.Guid) -> Any
+rhinoscriptsyntax.SelectedObjects(include_lights: bool = False, include_grips: bool = False) -> Any
+rhinoscriptsyntax.SendKeystrokes(keys: str = None, add_return: bool = True) -> None
+rhinoscriptsyntax.SetDocumentData(section: str, entry: str, value: str) -> str
+rhinoscriptsyntax.SetDocumentUserText(key: str, value: str = None) -> bool
+rhinoscriptsyntax.SetUserText(object_id: str, key: str, value: str = None, attach_to_geometry: bool = False) -> bool
+rhinoscriptsyntax.ShearObject(object_id: System.Guid, origin: Rhino.Geometry.Point3d, reference_point: Rhino.Geometry.Point3d, angle_degrees: Any, copy: bool = False) -> System.Guid
+rhinoscriptsyntax.ShearObjects(object_ids: Any, origin: Rhino.Geometry.Point3d, reference_point: Rhino.Geometry.Point3d, angle_degrees: Any, copy: bool = False) -> Any
+rhinoscriptsyntax.ShootRay(surface_ids: Any, start_point: Rhino.Geometry.Point3d, direction: Rhino.Geometry.Vector3d, reflections: float = 10) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.ShortPath(surface_id: System.Guid, start_point: Rhino.Geometry.Point3d, end_point: Rhino.Geometry.Point3d) -> System.Guid
+rhinoscriptsyntax.ShowGrid(view: Any = None, show: bool = None) -> bool
+rhinoscriptsyntax.ShowGridAxes(view: Any = None, show: bool = None) -> bool
+rhinoscriptsyntax.ShowGroup(group_name: str) -> float
+rhinoscriptsyntax.ShowObject(object_id: System.Guid) -> bool
+rhinoscriptsyntax.ShowObjects(object_ids: Any) -> float
+rhinoscriptsyntax.ShowToolbar(name: str, toolbar_group: str) -> bool
+rhinoscriptsyntax.ShowViewTitle(view: Any = None, show: bool = True) -> None
+rhinoscriptsyntax.ShowWorldAxes(view: Any = None, show: Any = None) -> bool
+rhinoscriptsyntax.ShrinkTrimmedSurface(object_id: System.Guid, create_copy: bool = False) -> bool
+rhinoscriptsyntax.SimplifyArray(points: Rhino.Geometry.Point3d) -> Any
+rhinoscriptsyntax.SimplifyCurve(curve_id: System.Guid, flags: float = 0) -> bool
+rhinoscriptsyntax.Sleep(milliseconds: float) -> None
+rhinoscriptsyntax.Snap(enable: bool = None) -> bool
+rhinoscriptsyntax.SortPointList(points: Rhino.Geometry.Point3d, tolerance: float = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.SortPoints(points: Rhino.Geometry.Point3d, ascending: bool = True, order: float = 0) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.SplitBrep(brep_id: Any, cutter_id: Any, delete_input: Any = False) -> Any
+rhinoscriptsyntax.SplitCurve(curve_id: System.Guid, parameter: Any, delete_input: bool = True) -> Any
+rhinoscriptsyntax.SplitDisjointMesh(object_id: System.Guid, delete_input: bool = False) -> Any
+rhinoscriptsyntax.SpotLightHardness(object_id: System.Guid, hardness: float = None) -> float
+rhinoscriptsyntax.SpotLightRadius(object_id: System.Guid, radius: float = None) -> float
+rhinoscriptsyntax.SpotLightShadowIntensity(object_id: System.Guid, intensity: float = None) -> float
+rhinoscriptsyntax.StatusBarDistance(distance: float = 0) -> None
+rhinoscriptsyntax.StatusBarMessage(message: str = None) -> None
+rhinoscriptsyntax.StatusBarPoint(point: Rhino.Geometry.Point3d = None) -> None
+rhinoscriptsyntax.StatusBarProgressMeterHide() -> None
+rhinoscriptsyntax.StatusBarProgressMeterShow(label: str, lower: str, upper: str, embed_label: bool = True, show_percent: bool = True) -> bool
+rhinoscriptsyntax.StatusBarProgressMeterUpdate(position: float, absolute: bool = True) -> float
+rhinoscriptsyntax.Str2Pt(point: str) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.StringBox(message: str = None, default_value: str = None, title: str = None) -> str
+rhinoscriptsyntax.SurfaceArea(object_id: System.Guid) -> Any
+rhinoscriptsyntax.SurfaceAreaCentroid(object_id: System.Guid) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.SurfaceAreaMoments(surface_id: System.Guid) -> Any
+rhinoscriptsyntax.SurfaceClosestPoint(surface_id: System.Guid, test_point: Rhino.Geometry.Point3d) -> Any
+rhinoscriptsyntax.SurfaceCone(surface_id: System.Guid) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.SurfaceCurvature(surface_id: System.Guid, parameter: float) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.SurfaceCylinder(surface_id: System.Guid) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.SurfaceDegree(surface_id: System.Guid, direction: float = 2) -> float
+rhinoscriptsyntax.SurfaceDomain(surface_id: System.Guid, direction: float) -> Any
+rhinoscriptsyntax.SurfaceEditPoints(surface_id: System.Guid, return_parameters: bool = False, return_all: bool = True) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.SurfaceEvaluate(surface_id: System.Guid, parameter: Any, derivative: float) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.SurfaceFrame(surface_id: System.Guid, uv_parameter: Any) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.SurfaceIsocurveDensity(surface_id: System.Guid, density: float = None) -> float
+rhinoscriptsyntax.SurfaceKnotCount(surface_id: System.Guid) -> Any
+rhinoscriptsyntax.SurfaceKnots(surface_id: System.Guid) -> Any
+rhinoscriptsyntax.SurfaceNormal(surface_id: System.Guid, uv_parameter: Any) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.SurfaceNormalizedParameter(surface_id: System.Guid, parameter: Any) -> Any
+rhinoscriptsyntax.SurfaceParameter(surface_id: System.Guid, parameter: Any) -> Any
+rhinoscriptsyntax.SurfacePointCount(surface_id: System.Guid) -> Any
+rhinoscriptsyntax.SurfacePoints(surface_id: System.Guid, return_all: bool = True) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.SurfaceSphere(surface_id: System.Guid) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.SurfaceTorus(surface_id: System.Guid) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.SurfaceVolume(object_id: System.Guid) -> Any
+rhinoscriptsyntax.SurfaceVolumeCentroid(object_id: System.Guid) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.SurfaceVolumeMoments(surface_id: System.Guid) -> Any
+rhinoscriptsyntax.SurfaceWeights(object_id: System.Guid) -> Any
+rhinoscriptsyntax.TemplateFile(filename: str = None) -> str
+rhinoscriptsyntax.TemplateFolder(folder: str = None) -> str
+rhinoscriptsyntax.TextDotFont(object_id: System.Guid, fontface: str = None) -> str
+rhinoscriptsyntax.TextDotHeight(object_id: System.Guid, height: float = None) -> float
+rhinoscriptsyntax.TextDotPoint(object_id: System.Guid, point: Rhino.Geometry.Point3d = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.TextDotText(object_id: System.Guid, text: str = None) -> str
+rhinoscriptsyntax.TextObjectFont(object_id: System.Guid, font: str = None) -> str
+rhinoscriptsyntax.TextObjectHeight(object_id: System.Guid, height: float = None) -> float
+rhinoscriptsyntax.TextObjectPlane(object_id: System.Guid, plane: Rhino.Geometry.Plane = None) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.TextObjectPoint(object_id: System.Guid, point: Rhino.Geometry.Point3d = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.TextObjectStyle(object_id: System.Guid, style: float = None) -> float
+rhinoscriptsyntax.TextObjectText(object_id: System.Guid, text: str = None) -> str
+rhinoscriptsyntax.TextOut(message: str = None, title: str = None) -> None
+rhinoscriptsyntax.TiltView(view: Any = None, direction: float = 0, angle: float = None) -> bool
+rhinoscriptsyntax.ToolbarCollectionCount() -> float
+rhinoscriptsyntax.ToolbarCollectionNames() -> Any
+rhinoscriptsyntax.ToolbarCollectionPath(name: str) -> str
+rhinoscriptsyntax.ToolbarCount(name: str, groups: bool = False) -> float
+rhinoscriptsyntax.ToolbarNames(name: str, groups: bool = False) -> Any
+rhinoscriptsyntax.TransformObject(object_id: Any, matrix: Rhino.Geometry.Transform, copy: bool = False) -> Any
+rhinoscriptsyntax.TransformObjects(object_ids: Any, matrix: Rhino.Geometry.Transform, copy: bool = False) -> Any
+rhinoscriptsyntax.TrimBrep(object_id: System.Guid, cutter: Rhino.Geometry.Plane, tolerance: float = None) -> Any
+rhinoscriptsyntax.TrimCurve(curve_id: System.Guid, interval: Any, delete_input: bool = True) -> Any
+rhinoscriptsyntax.TrimSurface(surface_id: System.Guid, direction: Optional[float] = None, interval: Tuple[float, float], delete_input: bool = False) -> System.Guid
+rhinoscriptsyntax.UnifyMeshNormals(object_id: System.Guid) -> float
+rhinoscriptsyntax.UnitAbsoluteTolerance(tolerance: float = None, in_model_units: bool = True) -> float
+rhinoscriptsyntax.UnitAngleTolerance(angle_tolerance_degrees: float = None, in_model_units: float = True) -> float
+rhinoscriptsyntax.UnitDistanceDisplayPrecision(precision: float = None, model_units: bool = True) -> float
+rhinoscriptsyntax.UnitRelativeTolerance(relative_tolerance: float = None, in_model_units: bool = True) -> float
+rhinoscriptsyntax.UnitScale(to_system: float, from_system: float = None) -> float
+rhinoscriptsyntax.UnitSystem(unit_system: float = None, scale: bool = False, in_model_units: float = True) -> float
+rhinoscriptsyntax.UnitSystemName(capitalize: bool = False, singular: bool = True, abbreviate: bool = False, model_units: bool = True) -> str
+rhinoscriptsyntax.UnlockGroup(group_name: str) -> float
+rhinoscriptsyntax.UnlockObject(object_id: System.Guid) -> bool
+rhinoscriptsyntax.UnlockObjects(object_ids: Any) -> float
+rhinoscriptsyntax.UnrollSurface(surface_id: System.Guid, explode: bool = False, following_geometry: Any = None, absolute_tolerance: Any = None, relative_tolerance: Any = None) -> Any
+rhinoscriptsyntax.UnselectAllObjects() -> float
+rhinoscriptsyntax.UnselectObject(object_id: Any) -> bool
+rhinoscriptsyntax.UnselectObjectGrip(object_id: System.Guid, index: float) -> bool
+rhinoscriptsyntax.UnselectObjectGrips(object_id: System.Guid) -> float
+rhinoscriptsyntax.UnselectObjects(object_ids: Any) -> float
+rhinoscriptsyntax.VectorAdd(vector1: Rhino.Geometry.Vector3d, vector2: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.VectorAngle(vector1: Rhino.Geometry.Vector3d, vector2: Rhino.Geometry.Vector3d) -> float
+rhinoscriptsyntax.VectorCompare(vector1: Rhino.Geometry.Vector3d, vector2: Rhino.Geometry.Vector3d) -> float
+rhinoscriptsyntax.VectorCreate(to_point: Rhino.Geometry.Point3d, from_point: Rhino.Geometry.Point3d) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.VectorCrossProduct(vector1: Rhino.Geometry.Vector3d, vector2: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.VectorDivide(vector: Rhino.Geometry.Vector3d, divide: float) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.VectorDotProduct(vector1: Rhino.Geometry.Vector3d, vector2: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.VectorLength(vector: Rhino.Geometry.Vector3d) -> float
+rhinoscriptsyntax.VectorMultiply(vector1: Rhino.Geometry.Vector3d, vector2: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.VectorReverse(vector: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.VectorRotate(vector: Rhino.Geometry.Vector3d, angle_degrees: float, axis: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.VectorScale(vector: Rhino.Geometry.Vector3d, scale: float) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.VectorSubtract(vector1: Rhino.Geometry.Vector3d, vector2: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.VectorTransform(vector: Rhino.Geometry.Vector3d, xform: Rhino.Geometry.Transform) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.VectorUnitize(vector: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.ViewCPlane(view: Any = None, plane: Rhino.Geometry.Plane = None) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.ViewCamera(view: Any = None, camera_location: Rhino.Geometry.Point3d = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.ViewCameraLens(view: Any = None, length: float = None) -> float
+rhinoscriptsyntax.ViewCameraPlane(view: Any = None) -> Rhino.Geometry.Plane
+rhinoscriptsyntax.ViewCameraTarget(view: Any = None, camera: Rhino.Geometry.Point3d = None, target: Rhino.Geometry.Point3d = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.ViewCameraUp(view: Any = None, up_vector: Rhino.Geometry.Vector3d = None) -> Rhino.Geometry.Vector3d
+rhinoscriptsyntax.ViewDisplayMode(view: Any = None, mode: Any = None, return_name: bool = True) -> str
+rhinoscriptsyntax.ViewDisplayModeId(name: str) -> System.Guid
+rhinoscriptsyntax.ViewDisplayModeName(mode_id: System.Guid) -> str
+rhinoscriptsyntax.ViewDisplayModes(return_names: Any = True) -> Any
+rhinoscriptsyntax.ViewNames(return_names: bool = True, view_type: Any = 0) -> Any
+rhinoscriptsyntax.ViewNearCorners(view: Any = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.ViewProjection(view: Any = None, mode: float = None) -> float
+rhinoscriptsyntax.ViewRadius(view: Any = None, radius: float = None, mode: bool = False) -> float
+rhinoscriptsyntax.ViewSize(view: Any = None) -> Any
+rhinoscriptsyntax.ViewSpeedTest(view: Any = None, frames: float = 100, freeze: bool = True, direction: float = 0, angle_degrees: float = 5) -> float
+rhinoscriptsyntax.ViewTarget(view: Any = None, target: Rhino.Geometry.Point3d = None) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.ViewTitle(view_id: Any) -> str
+rhinoscriptsyntax.VisibleObjects(view: bool = None, select: bool = False, include_lights: bool = False, include_grips: bool = False) -> Any
+rhinoscriptsyntax.Wallpaper(view: Any = None, filename: str = None) -> str
+rhinoscriptsyntax.WallpaperGrayScale(view: Any = None, grayscale: bool = None) -> bool
+rhinoscriptsyntax.WallpaperHidden(view: Any = None, hidden: bool = None) -> bool
+rhinoscriptsyntax.WindowHandle() -> Any
+rhinoscriptsyntax.WindowPick(corner1: Rhino.Geometry.Point3d, corner2: Rhino.Geometry.Point3d, view: bool = None, select: bool = False, in_window: bool = True) -> Any
+rhinoscriptsyntax.WorkingFolder(folder: str = None) -> str
+rhinoscriptsyntax.WorldXYPlane() -> Rhino.Geometry.Plane
+rhinoscriptsyntax.WorldYZPlane() -> Rhino.Geometry.Plane
+rhinoscriptsyntax.WorldZXPlane() -> Rhino.Geometry.Plane
+rhinoscriptsyntax.XformCPlaneToWorld(point: Rhino.Geometry.Point3d, plane: Rhino.Geometry.Plane) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.XformChangeBasis(initial_plane: Rhino.Geometry.Plane, final_plane: Rhino.Geometry.Plane) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformChangeBasis2(x0: Rhino.Geometry.Vector3d, y0: Rhino.Geometry.Vector3d, z0: Rhino.Geometry.Vector3d, x1: Rhino.Geometry.Vector3d, y1: Rhino.Geometry.Vector3d, z1: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformCompare(xform1: Any, xform2: Any) -> float
+rhinoscriptsyntax.XformDeterminant(xform: Rhino.Geometry.Transform) -> float
+rhinoscriptsyntax.XformDiagonal(diagonal_value: float) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformIdentity() -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformInverse(xform: Rhino.Geometry.Transform) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformMirror(mirror_plane_point: Rhino.Geometry.Point3d, mirror_plane_normal: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformMultiply(xform1: Rhino.Geometry.Transform, xform2: Rhino.Geometry.Transform) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformPlanarProjection(plane: Rhino.Geometry.Plane) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformRotation1(initial_plane: Rhino.Geometry.Plane, final_plane: Rhino.Geometry.Plane) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformRotation2(angle_degrees: float, rotation_axis: Rhino.Geometry.Vector3d, center_point: Rhino.Geometry.Point3d) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformRotation3(start_direction: Rhino.Geometry.Vector3d, end_direction: Rhino.Geometry.Vector3d, center_point: Rhino.Geometry.Point3d) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformRotation4(x0: Rhino.Geometry.Vector3d, y0: Rhino.Geometry.Vector3d, z0: Rhino.Geometry.Vector3d, x1: Rhino.Geometry.Vector3d, y1: Rhino.Geometry.Vector3d, z1: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformScale(scale: Rhino.Geometry.Point3d, point: Rhino.Geometry.Point3d = None) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformScreenToWorld(point: Rhino.Geometry.Point3d, view: str = None, screen_coordinates: bool = False) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.XformShear(plane: Rhino.Geometry.Plane, x: float, y: float, z: float) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformTranslation(vector: Rhino.Geometry.Vector3d) -> Rhino.Geometry.Transform
+rhinoscriptsyntax.XformWorldToCPlane(point: Rhino.Geometry.Point3d, plane: Rhino.Geometry.Plane) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.XformWorldToScreen(point: Rhino.Geometry.Point3d, view: str = None, screen_coordinates: bool = False) -> Rhino.Geometry.Point3d
+rhinoscriptsyntax.XformZero() -> Rhino.Geometry.Transform
+rhinoscriptsyntax.ZoomBoundingBox(bounding_box: Rhino.Geometry.Point3d, view: Any = None, all: bool = False) -> None
+rhinoscriptsyntax.ZoomExtents(view: Any = None, all: bool = False) -> None
+rhinoscriptsyntax.ZoomSelected(view: Any = None, all: bool = False) -> None

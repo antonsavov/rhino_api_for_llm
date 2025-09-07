@@ -23,7 +23,7 @@ import sys
 
 # ---------- Configuration (overridden by CLI args if provided) ----------
 INPUT_DIRS = [r"grasshopper-api-docs/api/grasshopper/html",r"rhinocommon-api-docs/api/RhinoCommon/html"]
-OUTPUT_PATHS = [r"ref_api_methods_signatures_grasshopper.txt", r"ref_api_methods_signatures_rhinocommon.txt"]
+OUTPUT_PATHS = [r"ref_api_grasshopper_all.txt", r"ref_api_rhinocommon_all.txt"]
 
 # ---------- Helpers ----------
 
@@ -321,6 +321,14 @@ def process_file(path):
     except Exception as e:
         return None
 
+def filter_namespace(input_file, output_file, namespace="Rhino.Geometry"):
+    with open(input_file, "r", encoding="utf-8") as infile, \
+         open(output_file, "w", encoding="utf-8") as outfile:
+        
+        for line in infile:
+            if line.startswith(namespace):
+                outfile.write(line)
+
 def main():
 
     for input_dir, output_txt in zip(INPUT_DIRS, OUTPUT_PATHS):       
@@ -355,6 +363,13 @@ def main():
 
         print(f"Processed {total} method files; extracted {found} signatures.")
         print(f"Output written to: {out_path}")
+    
+    # save only Rhino.Geometry methods to a separate file
+    # Change these filenames as needed
+    input_filename = OUTPUT_PATHS[1]  # assuming Rhinocommon output
+    output_filename = "ref_api_rhinocommon_geometry.txt"
+    filter_namespace(input_filename, output_filename, namespace="Rhino.Geometry")
+    print(f"Filtered lines saved to {output_filename}")
 
 if __name__ == "__main__":
     main()

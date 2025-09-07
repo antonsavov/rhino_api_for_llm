@@ -4,15 +4,23 @@
 
 This repo contains guidelines how to feed large language models (LLMs) with accurate context and call signatures so they can generate GhPython code with fewer hallucinations.
 
-It includes a tool that converts the docs for **RhinoCommon** and **Grasshopper** API into clean, Python-style method signatures in **.txt** format.
+It includes a tool that converts the docs for **RhinoCommon**, **Grasshopper** and **Rhinoscriptsyntax** API into clean, Python-style method signatures in **.txt** format suitable to add to prompts to reduce method hallucinations.
 
 ## Usage
 
-Modify the sample prompt (`sample_prompt_plain.md` or `sample_prompt_sdk_mode.md`) to your case. Attach the following files to the prompt: 
+Pick one of the sample prompts (`Rhinocommon` or `Rhinoscriptsyntax`, `plain` or `SDK` mode) and modify it to your case. Attach the suitable files to the prompt: 
 
-- `ref_api_methods_signatures_rhinocommon.txt`
-- `ref_api_methods_signatures_grasshopper.txt`
+For a RhinoCommon prompts:
+- `ref_api_rhinocommon_geometry.txt`
 - `ref_grasshopper_python_component.pdf`
+- (optional) `ref_api_grasshopper.txt`
+- (optional) `ref_api_rhinocommon_all.txt`
+
+
+For Rhinoscriptsyntax prompts:
+- `ref_api_rhinoscriptsyntax_all.txt`
+- `ref_grasshopper_python_component.pdf`
+
 
 ## Setup
 
@@ -29,24 +37,38 @@ Modify the sample prompt (`sample_prompt_plain.md` or `sample_prompt_sdk_mode.md
   git clone --depth=1 -b gh-pages https://github.com/mcneel/grasshopper-api-docs
   ```
 
+* Rhinoscript Syntax
+
+  ```bash
+  wget --mirror --convert-links --adjust-extension --page-requisites --no-parent \
+  https://developer.rhino3d.com/api/RhinoScriptSyntax/
+  ```
+
 Run the commands above from the root of this project so the downloaded folders are at the root of the project.
 
 
 ### 2. Extract the API Signatures
 
-Run the extraction script to generate Python-style method signatures for both APIs:
+Run the extraction scripts to generate Python-style method signatures for both APIs:
 
 ```bash
 python extract_api_signatures.py
+python extract_rhinoscriptsyntax_signatures.py
 ```
 
 This will process the HTML files in both documentation folders and output two text files:
-- `ref_api_methods_signatures_grasshopper.txt`
-- `ref_api_methods_signatures_rhinocommon.txt`
+- `ref_api_grasshopper.txt`
+- `ref_api_rhinocommon_all.txt`
+- `ref_api_rhinocommon_geometry.txt`
+- `ref_api_rhinoscriptsyntax_all.txt`
 
 Each line in these files contains a fully-qualified method signature, e.g.:
-```
-Rhino.Geometry.Arc.__init__(self, center: Rhino.Geometry.Point3d, radius: float, angleRadians: float) -> None
+```python
+# example line in ref_api_rhinocommon_geometry.txt
+Rhino.Geometry.Rectangle3d.__init__(self, plane: Rhino.Geometry.Plane, width: Rhino.Geometry.Interval, height: Rhino.Geometry.Interval) -> None
+
+# example line in ref_api_rhinoscriptsyntax.txt
+rhinoscriptsyntax.AddRectangle(plane: Rhino.Geometry.Plane, width: float, height: float) -> System.Guid
 ```
 
 **How It Works**

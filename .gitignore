@@ -183,4 +183,6 @@ cython_debug/
 
 rhinocommon-api-docs
 grasshopper-api-docs
+rhinoscriptsyntax-api-docs
+developer.rhino3d.com
 .DS_Store
