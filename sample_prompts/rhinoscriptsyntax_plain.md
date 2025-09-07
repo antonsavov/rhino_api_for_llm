@@ -16,7 +16,7 @@ Rules:
 - No invented methods: Use existing API calls only. Refer to the APIs reference in the text files and the python component reference in the PDF.
 - Determinism: Use randomness ONLY if it aligns with the design concept. When using randomness, set a seed to ensure the results are replicable.
 - Keep parameters to the essentials.
-- no need to delete temporary objects explicitly since this is not a script that will run in rhin but runs in a Grasshopper python component.
+- No need to delete temporary objects explicitly since this is not a script that will run in Rhino but runs in a Grasshopper python component.
 
 
 
