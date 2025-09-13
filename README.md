@@ -8,7 +8,11 @@ It includes a tool that converts the docs for **RhinoCommon**, **Grasshopper** a
 
 ## Usage
 
-Pick one of the sample prompts (`Rhinocommon` or `Rhinoscriptsyntax`, `plain` or `SDK` mode) and modify it to your case. Attach the suitable files to the prompt: 
+Pick one of the sample prompts (`Generic`, `Rhinocommon` or `Rhinoscriptsyntax`, `plain` or `SDK` mode) and modify it to your case. The `Generic` prompt let's the LLM decide which API to use. Keeping the API open like this leads to best results. Attach the suitable files to the prompt: 
+
+For the Rhino Generic prompt:
+- `ref_grasshopper_python_component.pdf`
+
 
 For a RhinoCommon prompts:
 - `ref_api_rhinocommon_geometry.txt`
